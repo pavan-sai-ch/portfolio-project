@@ -50,7 +50,7 @@ export const experience = [
         role: "Teaching Assistant - Algorithms",
         period: "Jan 2025 – Dec 2025",
         description:
-            "Evaluated 500+ assignments involving pseudo-code and flowcharts. Assessed solutions for logical correctness and efficiency (Time Complexity/Big O).",
+            "Evaluated 500+ assignments involving pseudo-code and flowcharts. Assessed solutions for logical correctness and efficiency (Time Complexity/Big O) and provided feedback.",
     },
     {
         company: "Dhanush Infotech Pvt Ltd",
@@ -63,11 +63,11 @@ export const experience = [
 
 export const projects = [
     {
-        title: "Vet Clinic Service Booking",
+        title: "The Daily Wag",
         year: "2025",
         description:
-            "A full-stack veterinary booking system featuring secure user authentication, appointment scheduling, and cloud-based photo storage.",
-        tags: ["React", "PHP", "MySQL", "AWS S3"],
+            "A one stop high-end clinic to all your Pet Needs. Be it grooming, doctor appointments, pet accessories or adoption. We got you and your pets covered.",
+        tags: ["React", "PHP", "MySQL", "AWS S3", "Docker"],
         links: {
             // Add your deployed link here later
             code: "https://github.com/pavan-sai-ch/daily-wag-frontend",
@@ -79,11 +79,20 @@ export const projects = [
         year: "2024",
         description:
             "A ride-sharing platform connecting riders and passengers. Managed data with MongoDB Atlas and automated deployment pipelines via Vercel and Render.",
-        tags: ["React", "Flask", "MongoDB", "Vercel"],
+        tags: ["React", "Flask", "MongoDB", "Vercel", "Render"],
         links: {
             code: "https://github.com/pavan-sai-ch/carpool-frontend",
         },
         image: "/images/projects/carpool.png",
+    },
+    {
+        title: "Data Visualization Dashboards",
+        year: "2024",
+        description: "Trends analyzed and stories written with public sourced data across different websites and created with Tableau.",
+        tags: ["Tableau", "Data Visualization", "Business Intelligence"],
+        links: {
+            code: "https://github.com/pavan-sai-ch/data-vis",
+        },
     },
     {
         title: "Privacy Preservation of Biometrics",
@@ -105,6 +114,6 @@ export const projects = [
         links: {
             code: "https://github.com/pavan-sai-ch",
         },
-        image: "/images/projects/sales-prediction.png",
     },
+
 ];

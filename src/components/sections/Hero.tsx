@@ -1,10 +1,13 @@
+// noinspection HtmlUnknownAnchorTarget
+
 import Link from 'next/link';
-import { ArrowRight, Github, Linkedin } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '@/components/ui/SocialIcons'; // Import custom icons
 import { personalInfo } from '@/lib/data';
-import React from "react";
+
 export default function Hero() {
     return (
-        <section id="about" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <section id="home" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
 
             {/* BACKGROUND DECORATION */}
             <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-grid-pattern [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
@@ -48,21 +51,35 @@ export default function Hero() {
                         </Link>
 
                         <div className="flex gap-4 items-center pl-0 sm:pl-4">
+                            {/* Github */}
                             <a
                                 href={personalInfo.links.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-3 rounded-full bg-gray-100 text-gray-700 hover:bg-white hover:text-primary-600 hover:shadow-md transition-all border border-transparent hover:border-gray-200"
+                                aria-label="GitHub Profile"
                             >
-                                <Github size={24} />
+                                <GithubIcon size={24} />
                             </a>
+
+                            {/* Linkedin */}
                             <a
                                 href={personalInfo.links.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-3 rounded-full bg-gray-100 text-gray-700 hover:bg-white hover:text-[#0077b5] hover:shadow-md transition-all border border-transparent hover:border-gray-200"
+                                aria-label="LinkedIn Profile"
                             >
-                                <Linkedin size={24} />
+                                <LinkedinIcon size={24} />
+                            </a>
+
+                            {/* Email */}
+                            <a
+                                href={`mailto:${personalInfo.email}`}
+                                className="p-3 rounded-full bg-gray-100 text-gray-700 hover:bg-white hover:text-red-500 hover:shadow-md transition-all border border-transparent hover:border-gray-200"
+                                aria-label="Email Me"
+                            >
+                                <Mail size={24} />
                             </a>
                         </div>
                     </div>

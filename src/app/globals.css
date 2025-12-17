@@ -19,3 +19,13 @@ body {
         background-image: radial-gradient(circle, #e0e7ff 1px, transparent 1px);
     }
 }
+
+.mobile-menu-overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Darker (40%) so you can SEE the overlay */
+    backdrop-filter: blur(12px) !important; /* Standard blur */
+    -webkit-backdrop-filter: blur(12px) !important; /* Safari/iPhone specific blur */
+    position: fixed;
+    inset: 0;
+    top: 64px; /* Matches the 16 height (4rem) of your navbar */
+    z-index: 40;
+}

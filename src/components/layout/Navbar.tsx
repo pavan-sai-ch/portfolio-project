@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { personalInfo } from '@/lib/data';
@@ -11,6 +11,7 @@ export default function Navbar() {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const navLinks = [
+        { name: 'Home', href: '#home' },
         { name: 'About', href: '#about' },
         { name: 'Projects', href: '#projects' },
         { name: 'Experience', href: '#experience' },
@@ -18,6 +19,7 @@ export default function Navbar() {
     ];
 
     return (
+        // Note: z-50 keeps the navbar on top of everything
         <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
@@ -59,32 +61,42 @@ export default function Navbar() {
                 </div>
             </div>
 
-            {/* Mobile Dropdown Menu */}
+            {/* MOBILE MENU LOGIC */}
             {isMenuOpen && (
-                <div className="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
-                    <div className="px-4 pt-2 pb-6 space-y-2">
-                        {navLinks.map((link) => (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                className="block px-3 py-3 text-base font-medium text-gray-600 hover:text-black hover:bg-gray-50 rounded-md"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
-                        <div className="pt-4">
-                            <a
-                                href={personalInfo.links.resume}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="block w-full text-center px-4 py-3 rounded-md bg-black text-white font-medium hover:bg-gray-800"
-                            >
-                                Download Resume
-                            </a>
+                <>
+                    {/* 1. THE BLUR OVERLAY (Using the custom CSS class) */}
+                    <div
+                        className="mobile-menu-overlay md:hidden"
+                        onClick={() => setIsMenuOpen(false)}
+                    />
+
+                    {/* 2. THE DROPDOWN MENU */}
+                    <div className="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl z-50">
+                        {/* ... keep the menu content exactly the same ... */}
+                        <div className="px-4 pt-2 pb-6 space-y-2">
+                            {navLinks.map((link) => (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className="block px-3 py-3 text-base font-medium text-gray-600 hover:text-black hover:bg-gray-50 rounded-md"
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                            <div className="pt-4">
+                                <a
+                                    href={personalInfo.links.resume}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block w-full text-center px-4 py-3 rounded-md bg-black text-white font-medium hover:bg-gray-800"
+                                >
+                                    Download Resume
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </>
             )}
         </nav>
     );

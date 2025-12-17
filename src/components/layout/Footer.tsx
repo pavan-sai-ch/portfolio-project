@@ -1,6 +1,6 @@
 import { personalInfo } from '@/lib/data';
-import { Github, Linkedin, Mail } from 'lucide-react';
-import React from "react";
+import { Mail } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '@/components/ui/SocialIcons';
 
 export default function Footer() {
     return (
@@ -12,10 +12,10 @@ export default function Footer() {
 
                 <div className="flex gap-6">
                     <a href={personalInfo.links.github} target="_blank" className="text-gray-500 hover:text-black transition-colors" aria-label="GitHub">
-                        <Github size={20} />
+                        <GithubIcon size={20} />
                     </a>
                     <a href={personalInfo.links.linkedin} target="_blank" className="text-gray-500 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
-                        <Linkedin size={20} />
+                        <LinkedinIcon size={20} />
                     </a>
                     <a href={`mailto:${personalInfo.email}`} className="text-gray-500 hover:text-black transition-colors" aria-label="Email">
                         <Mail size={20} />

@@ -1,17 +1,21 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/sections/Hero';
+import About from '@/components/sections/About'; // Import the new component
 import Projects from '@/components/sections/Projects';
 import Experience from '@/components/sections/Experience';
 import Skills from '@/components/sections/Skills';
 import FadeIn from '@/components/ui/FadeIn';
-import React from "react";
+
 export default function Home() {
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
 
             <Hero />
+
+            {/* Add the About section here with animation */}
+
 
             <FadeIn>
                 <Projects />
@@ -24,7 +28,9 @@ export default function Home() {
             <FadeIn>
                 <Skills />
             </FadeIn>
-
+            <FadeIn>
+                <About />
+            </FadeIn>
             <Footer />
         </main>
     );

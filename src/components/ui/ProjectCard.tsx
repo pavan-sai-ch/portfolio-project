@@ -1,6 +1,7 @@
-import { Github, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { GithubIcon } from '@/components/ui/SocialIcons'; // Import custom icon
 import { Project } from '@/types';
-import React from "react";
+
 interface ProjectCardProps {
     project: Project;
 }
@@ -47,7 +48,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-black transition-colors"
                     >
-                        <Github size={18} />
+                        <GithubIcon size={18} />
                         Source Code
                     </a>
 

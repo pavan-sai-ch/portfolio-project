@@ -7,7 +7,7 @@ export interface Project {
         demo?: string;
         code: string;
     };
-    image: string;
+    image?: string;
 }
 
 export interface Experience {
