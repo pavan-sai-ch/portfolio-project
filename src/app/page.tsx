@@ -6,7 +6,7 @@ import Projects from '@/components/sections/Projects';
 import Experience from '@/components/sections/Experience';
 import Skills from '@/components/sections/Skills';
 import FadeIn from '@/components/ui/FadeIn';
-
+import { Analytics } from "@vercel/analytics/next"
 export default function Home() {
     return (
         <main className="min-h-screen bg-white">
@@ -32,6 +32,7 @@ export default function Home() {
                 <About />
             </FadeIn>
             <Footer />
+            <Analytics />
         </main>
     );
 }
