@@ -16,13 +16,13 @@ export default function Home() {
 
             {/* Add the About section here with animation */}
 
-            <FadeIn>
-                <Skills />
-            </FadeIn>
+
             <FadeIn>
                 <Projects />
             </FadeIn>
-
+            <FadeIn>
+                <Skills />
+            </FadeIn>
             <FadeIn>
                 <Experience />
             </FadeIn>
