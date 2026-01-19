@@ -16,7 +16,9 @@ export default function Home() {
 
             {/* Add the About section here with animation */}
 
-
+            <FadeIn>
+                <Skills />
+            </FadeIn>
             <FadeIn>
                 <Projects />
             </FadeIn>
@@ -25,9 +27,7 @@ export default function Home() {
                 <Experience />
             </FadeIn>
 
-            <FadeIn>
-                <Skills />
-            </FadeIn>
+
             <FadeIn>
                 <About />
             </FadeIn>
