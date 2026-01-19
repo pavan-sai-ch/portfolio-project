@@ -17,6 +17,7 @@ export const skills = {
     languages: [
         "JavaScript",
         "TypeScript",
+        "Swift",
         "Python",
         "Java",
         "C++",
@@ -31,7 +32,7 @@ export const skills = {
         "Bootstrap",
         "HTML5/CSS3",
     ],
-    backend: ["Node.js", "Express", "Flask", "PostgreSQL", "MySQL", "MongoDB"],
+    backend: ["Node.js", "Express", "Flask", "PostgreSQL", "MySQL", "MongoDB", "Cassandra", "Neo4j"],
     tools: [
         "Git",
         "GitHub",
