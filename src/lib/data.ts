@@ -37,6 +37,7 @@ export const skills = {
         "Git",
         "GitHub",
         "AWS S3",
+        "Docker",
         "Firebase",
         "Vercel",
         "Render",
