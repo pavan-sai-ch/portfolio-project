@@ -9,6 +9,8 @@ export default function Terminal() {
         { type: "output", content: cliConfig.welcomeMessage },
     ]);
     const [input, setInput] = useState("");
+    const [history, setHistory] = useState<string[]>([]);
+    const [historyIndex, setHistoryIndex] = useState(-1);
     const terminalRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
 
@@ -62,6 +64,10 @@ Projects: ${projects.length} projects`;
 Frontend: ${skills.frontend.join(", ")}
 Backend: ${skills.backend.join(", ")}
 Tools: ${skills.tools.join(", ")}`;
+            case "projects":
+                return projects.map(p => `${p.title}: ${p.tags.join(", ")}`).join("\n");
+            case "experience":
+                return experience.map(e => `${e.role} @ ${e.company}`).join("\n");
             case "contact":
                 return `Email: ${personalInfo.email}
 LinkedIn: ${personalInfo.links.linkedin}
@@ -95,7 +101,27 @@ Resume: ${personalInfo.links.resume}`;
         }
 
         setLines(newLines);
+        setHistory(prev => [input.trim(), ...prev]);
+        setHistoryIndex(-1);
         setInput("");
+    };
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === "ArrowUp") {
+            e.preventDefault();
+            setHistoryIndex(prev => {
+                const next = Math.min(prev + 1, history.length - 1);
+                setInput(history[next] ?? "");
+                return next;
+            });
+        } else if (e.key === "ArrowDown") {
+            e.preventDefault();
+            setHistoryIndex(prev => {
+                const next = prev - 1;
+                setInput(next < 0 ? "" : history[next] ?? "");
+                return Math.max(next, -1);
+            });
+        }
     };
 
     return (
@@ -129,6 +155,7 @@ Resume: ${personalInfo.links.resume}`;
                             type="text"
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
+                            onKeyDown={handleKeyDown}
                             onFocus={() => inputRef.current?.focus()}
                             className="flex-1 bg-transparent text-green-400 outline-none font-mono terminal-input"
                             placeholder="Type command here..."

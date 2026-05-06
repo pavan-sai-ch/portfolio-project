@@ -34,10 +34,12 @@ export const skills = {
     ],
     backend: ["Node.js", "Express", "Flask", "PostgreSQL", "MySQL", "MongoDB", "Cassandra", "Neo4j"],
     tools: [
+        "Claude Code",
         "Git",
         "GitHub",
         "AWS S3",
         "Docker",
+        "Kubernetes",
         "Firebase",
         "Vercel",
         "Render",
@@ -64,6 +66,18 @@ export const experience = [
 ];
 
 export const projects = [
+    {
+        title: "volumeMixer",
+        year: "2026",
+        description:
+            "A sophisticated macOS menu bar utility that grants independent volume control for individual applications. Leveraging low-level Core Audio Tap (CATap) APIs, it allows users to mix audio sources seamlessly without affecting system-wide levels.",
+        tags: ["Swift", "SwiftUI", "Core Audio", "macOS", "CATap"],
+        links: {
+            // Add your deployed link here later if you release a dmg/app
+            code: "https://github.com/pavan-sai-ch/volumeMixer",
+        },
+        image: "/images/projects/volume-mixer.png",
+    },
     {
         title: "The Daily Wag",
         year: "2025",
@@ -119,6 +133,48 @@ export const projects = [
     },
 
 ];
+
+export const about = {
+    heading: "More Than Just Code",
+    paragraphs: [
+        `I define myself as a <strong>product-minded engineer</strong>. While my core strength lies in full-stack development, I don't stop at the code.`,
+        `My background in <strong>Data Analytics</strong> allows me to understand the <em>business impact</em> of what I build, while my experience in <strong>Mobile (React Native)</strong> ensures those solutions reach users anywhere. I thrive in environments where I can wear multiple hats and solve problems holistically. The vast skill set I bring is really something I am proud of... As one says, "I am a jack of all trades".`,
+    ],
+    highlights: [
+        {
+            icon: "Code2",
+            color: "text-green-400",
+            borderHover: "hover:border-green-500",
+            title: "Engineering",
+            description: "Scalable Web & Mobile Apps",
+        },
+        {
+            icon: "BarChart3",
+            color: "text-blue-400",
+            borderHover: "hover:border-blue-400",
+            title: "Analytics",
+            description: "Tableau & Python Data Viz",
+        },
+    ],
+    afkHeading: "When I'm AFK",
+    hobbies: [
+        {
+            title: "Football/Soccer",
+            description:
+                "I love playing football with my friends. I love to dictate the play in general but am as versatile as a player can be with ability to play in any position.",
+        },
+        {
+            title: "Gaming",
+            description:
+                "Big fan of strategy games. They keep my problem-solving skills sharp even when relaxing.",
+        },
+        {
+            title: "Cooking",
+            description:
+                "I enjoy experimenting with new recipes, different cuisines and styles. It's the only time I don't strictly follow documentation and give it my own touch :)",
+        },
+    ],
+};
 
 // Terminal CLI Configuration
 export const cliConfig = {
