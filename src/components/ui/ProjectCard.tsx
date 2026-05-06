@@ -1,5 +1,5 @@
 import { ExternalLink } from 'lucide-react';
-import { GithubIcon } from '@/components/ui/SocialIcons'; // Import custom icon
+import { GithubIcon } from '@/components/ui/SocialIcons';
 import { Project } from '@/types';
 
 interface ProjectCardProps {
@@ -8,23 +8,23 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
     return (
-        <div className="group flex flex-col bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-primary-200">
+        <div className="group flex flex-col bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-300 hover:border-green-500/50">
 
             {/* Top Gradient Accent Bar */}
-            <div className="h-1 w-full bg-gradient-to-r from-primary-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+            <div className="h-1 w-full bg-gradient-to-r from-green-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
 
             {/* Content Section */}
             <div className="p-6 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-4">
                     <div>
-                        <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
+                        <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors">
                             {project.title}
                         </h3>
-                        <span className="text-sm text-gray-500">{project.year}</span>
+                        <span className="text-sm text-gray-500 font-mono">{project.year}</span>
                     </div>
                 </div>
 
-                <p className="text-gray-600 mb-6 flex-grow leading-relaxed">
+                <p className="text-gray-400 mb-6 flex-grow leading-relaxed">
                     {project.description}
                 </p>
 
@@ -33,20 +33,20 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     {project.tags.map((tag) => (
                         <span
                             key={tag}
-                            className="px-3 py-1 text-xs font-medium bg-gray-50 text-gray-600 border border-gray-100 rounded-full"
+                            className="px-2 py-1 text-xs font-mono bg-gray-800 text-green-400 border border-gray-700 rounded"
                         >
-              {tag}
-            </span>
+                            {tag}
+                        </span>
                     ))}
                 </div>
 
                 {/* Links Footer */}
-                <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
+                <div className="flex items-center gap-4 pt-4 border-t border-gray-800">
                     <a
                         href={project.links.code}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-black transition-colors"
+                        className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-green-400 transition-colors"
                     >
                         <GithubIcon size={18} />
                         Source Code
@@ -57,7 +57,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                             href={project.links.demo}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
+                            className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-blue-400 transition-colors"
                         >
                             <ExternalLink size={18} />
                             Live Demo

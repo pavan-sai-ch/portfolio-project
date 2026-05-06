@@ -1,86 +1,65 @@
-// noinspection HtmlUnknownAnchorTarget
-
-import Link from 'next/link';
-import { ArrowRight, Mail } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from '@/components/ui/SocialIcons'; // Import custom icons
+import { Mail, Github, Linkedin } from 'lucide-react';
+import Image from 'next/image';
 import { personalInfo } from '@/lib/data';
 
 export default function Hero() {
     return (
-        <section id="home" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <section id="home" className="relative pt-32 pb-8 md:pt-40 md:pb-12 overflow-hidden">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+                    {/* Left side: Name, Title, Links */}
+                    <div className="text-center md:text-left flex-1">
+                        {/* Name */}
+                        <h1 className="text-5xl md:text-6xl font-bold text-white mb-2">
+                            {personalInfo.name}
+                        </h1>
 
-            {/* BACKGROUND DECORATION */}
-            <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-grid-pattern [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+                        {/* Title */}
+                        <p className="text-xl md:text-2xl text-green-400 font-mono mb-8">
+                            Software Engineer | Available for Hire | Open to Relocate
+                        </p>
 
-            <div className="absolute top-0 right-0 -z-10 translate-x-1/3 -translate-y-1/4 transform">
-                <div className="h-[400px] w-[400px] rounded-full bg-primary-500/20 blur-[100px]" />
-            </div>
-            <div className="absolute bottom-0 left-0 -z-10 -translate-x-1/3 translate-y-1/4 transform">
-                <div className="h-[300px] w-[300px] rounded-full bg-blue-400/20 blur-[100px]" />
-            </div>
-
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <div className="max-w-3xl">
-
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 border border-primary-100 text-primary-600 text-sm font-medium mb-6">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
-            </span>
-                        Available for hire
-                    </div>
-
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-6">
-                        Building digital <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-blue-600">
-              experiences.
-            </span>
-                    </h1>
-
-                    <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-                        {personalInfo.bio}
-                    </p>
-
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <Link
-                            href="#projects"
-                            className="inline-flex justify-center items-center gap-2 px-8 py-4 rounded-full bg-gray-900 text-white font-medium hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-gray-900/20"
-                        >
-                            View Work
-                            <ArrowRight size={18} />
-                        </Link>
-
-                        <div className="flex gap-4 items-center pl-0 sm:pl-4">
-                            {/* Github */}
+                        {/* Social Links */}
+                        <div className="flex gap-4 justify-center md:justify-start">
                             <a
-                                href={personalInfo.links.github}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-3 rounded-full bg-gray-100 text-gray-700 hover:bg-white hover:text-primary-600 hover:shadow-md transition-all border border-transparent hover:border-gray-200"
-                                aria-label="GitHub Profile"
+                                href={`mailto:${personalInfo.email}`}
+                                className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-gray-300 hover:text-green-400 hover:border-green-400 border border-gray-700 rounded transition-all"
+                                title={personalInfo.email}
                             >
-                                <GithubIcon size={24} />
+                                <Mail size={18} />
+                                <span className="text-sm hidden sm:inline">Email</span>
                             </a>
-
-                            {/* Linkedin */}
                             <a
                                 href={personalInfo.links.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-3 rounded-full bg-gray-100 text-gray-700 hover:bg-white hover:text-[#0077b5] hover:shadow-md transition-all border border-transparent hover:border-gray-200"
-                                aria-label="LinkedIn Profile"
+                                className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-gray-300 hover:text-blue-400 hover:border-blue-400 border border-gray-700 rounded transition-all"
                             >
-                                <LinkedinIcon size={24} />
+                                <Linkedin size={18} />
+                                <span className="text-sm hidden sm:inline">LinkedIn</span>
                             </a>
-
-                            {/* Email */}
                             <a
-                                href={`mailto:${personalInfo.email}`}
-                                className="p-3 rounded-full bg-gray-100 text-gray-700 hover:bg-white hover:text-red-500 hover:shadow-md transition-all border border-transparent hover:border-gray-200"
-                                aria-label="Email Me"
+                                href={personalInfo.links.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-gray-300 hover:text-gray-100 hover:border-gray-300 border border-gray-700 rounded transition-all"
                             >
-                                <Mail size={24} />
+                                <Github size={18} />
+                                <span className="text-sm hidden sm:inline">GitHub</span>
                             </a>
+                        </div>
+                    </div>
+
+                    {/* Right side: Profile Image */}
+                    <div className="flex-shrink-0">
+                        <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-green-400 shadow-lg shadow-green-400/30">
+                            <Image
+                                src="/images/profile.JPG"
+                                alt="Profile"
+                                fill
+                                className="object-cover object-center"
+                                priority
+                            />
                         </div>
                     </div>
                 </div>

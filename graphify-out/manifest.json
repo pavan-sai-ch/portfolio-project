@@ -1,0 +1,98 @@
+{
+  "/Users/pavansai/Documents/coding/portfolio-project/postcss.config.mjs": {
+    "mtime": 1765931050.971765,
+    "hash": "96d72277da4f496c0448ed613f024069"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/next-env.d.ts": {
+    "mtime": 1778078724.18717,
+    "hash": "2a74d3909800ca5467fa83b0ab4a4890"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/tailwind.config.ts": {
+    "mtime": 1765930545.9242592,
+    "hash": "c524bbc510f191638644a8f85f7b92cc"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/eslint.config.mjs": {
+    "mtime": 1765898624.4807363,
+    "hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/next.config.ts": {
+    "mtime": 1765935226.5999792,
+    "hash": "9cbfef1b89dc5a6080a22a86eb829a9b"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/types/index.ts": {
+    "mtime": 1778077938.968167,
+    "hash": "740dd6b708ef1412914fad76eb6bd31e"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/app/layout.tsx": {
+    "mtime": 1778079694.2928975,
+    "hash": "3900ea01aafcc78e13b52db952ac2fef"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/app/page.tsx": {
+    "mtime": 1778078035.4086363,
+    "hash": "eb55fa76f11bfa6714f280b01bc2e9b9"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/ui/ProjectCard.tsx": {
+    "mtime": 1778077993.8299446,
+    "hash": "23260c304789dd3e25148a94138817f2"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/ui/SocialIcons.tsx": {
+    "mtime": 1765935655.6444066,
+    "hash": "d5f7e68f771655425709e4ebc575a233"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/ui/FadeIn.tsx": {
+    "mtime": 1765930591.5409997,
+    "hash": "47058bf37d10361e215f755e57dd298f"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/Projects.tsx": {
+    "mtime": 1778079420.7265382,
+    "hash": "44df0df9ba1d92cb26650c2ad7b40d94"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/Hero.tsx": {
+    "mtime": 1778079901.4005656,
+    "hash": "12389d5badc2dc402004f4e87e67b6cd"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/Experience.tsx": {
+    "mtime": 1778078024.017502,
+    "hash": "7e82c3384cd57e6c781a2c3592577940"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/Terminal.tsx": {
+    "mtime": 1778079784.3290913,
+    "hash": "f2f44471fb53c495f2f3f5630d01ba5f"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/Skills.tsx": {
+    "mtime": 1778077999.7753105,
+    "hash": "c6cf9507d200b3814c4dd3c7b872db10"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/About.tsx": {
+    "mtime": 1778078015.861781,
+    "hash": "7044956e10ba421e6df67b9722045fc5"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/layout/Navbar.tsx": {
+    "mtime": 1778078674.6663442,
+    "hash": "5e1aec47bf2a1a306af939b39d7b9252"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/components/layout/Footer.tsx": {
+    "mtime": 1778078030.070915,
+    "hash": "80c2bf225f629bb0a7d2f4c085ce04a1"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/src/lib/data.ts": {
+    "mtime": 1778077935.4974835,
+    "hash": "9dc2c0f8dff555bae7ac6299efebdf14"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/README.md": {
+    "mtime": 1765898624.480181,
+    "hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/CLAUDE.md": {
+    "mtime": 1778079346.7673204,
+    "hash": "8ee39dcfe68a23b3797b02648930d699"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/public/resume-pavan.pdf": {
+    "mtime": 1769582818.7677248,
+    "hash": "a08588c40da9ef0ede5ce09ab905a5c1"
+  },
+  "/Users/pavansai/Documents/coding/portfolio-project/public/images/profile.JPG": {
+    "mtime": 1775699807.0,
+    "hash": "037768f2c5a3a3840e3ffdd91bf7c3a2"
+  }
+}

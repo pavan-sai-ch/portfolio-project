@@ -1,21 +1,20 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/sections/Hero';
-import About from '@/components/sections/About'; // Import the new component
+import Terminal from '@/components/sections/Terminal';
 import Projects from '@/components/sections/Projects';
-import Experience from '@/components/sections/Experience';
 import Skills from '@/components/sections/Skills';
+import Experience from '@/components/sections/Experience';
+import About from '@/components/sections/About';
 import FadeIn from '@/components/ui/FadeIn';
 import { Analytics } from "@vercel/analytics/next"
+
 export default function Home() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-gray-900">
             <Navbar />
-
             <Hero />
-
-            {/* Add the About section here with animation */}
-
+            <Terminal />
 
             <FadeIn>
                 <Projects />
@@ -26,11 +25,10 @@ export default function Home() {
             <FadeIn>
                 <Experience />
             </FadeIn>
-
-
             <FadeIn>
                 <About />
             </FadeIn>
+
             <Footer />
             <Analytics />
         </main>

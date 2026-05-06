@@ -119,3 +119,35 @@ export const projects = [
     },
 
 ];
+
+// Terminal CLI Configuration
+export const cliConfig = {
+    welcomeMessage: "Welcome to my portfolio! Type 'help' and press enter to see available commands.",
+    helpText: `
+Available Commands:
+  ls              - List available sections
+  pwd             - Show current directory
+  cat <file>      - Read file contents (about, resume, projects, skills)
+  about           - Display my info
+  contact         - Show contact information
+  skills          - Show technical skills
+  clear           - Clear terminal
+  help            - Show this help message
+`,
+    files: {
+        about: `Name: ${personalInfo.name}
+Title: ${personalInfo.title}
+Location: ${personalInfo.location}
+
+${personalInfo.bio}`,
+        resume: `View full resume at: ${personalInfo.links.resume}`,
+        projects: `Total Projects: ${projects.length}
+Run 'ls' to see all available sections`,
+        skills: `Languages: ${skills.languages.join(", ")}
+Frontend: ${skills.frontend.join(", ")}
+Backend: ${skills.backend.join(", ")}
+Tools: ${skills.tools.join(", ")}`,
+    },
+    currentDir: "/portfolio",
+    listings: ["about", "projects", "skills", "experience", "contact"],
+};

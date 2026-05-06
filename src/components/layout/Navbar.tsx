@@ -1,103 +1,65 @@
 "use client";
 
-import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
 import { personalInfo } from '@/lib/data';
 
 export default function Navbar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
-    const navLinks = [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Skills', href: '#skills' },
-    ];
-
     return (
-        // Note: z-50 keeps the navbar on top of everything
-        <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <nav className="fixed top-0 w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+                <div className="flex justify-between items-center h-20">
+                    {/* Left: Name and Title */}
+                    <div className="flex flex-col">
+                        <Link
+                            href="#home"
+                            className="font-bold text-2xl text-white hover:text-green-400 transition-colors"
+                        >
+                            {personalInfo.name}
+                        </Link>
+                    </div>
 
-                    {/* Logo */}
-                    <Link href="/" className="font-bold text-xl text-gray-900 tracking-tight hover:text-primary-600 transition-colors">
-                        {personalInfo.name}
-                    </Link>
-
-                    {/* Desktop Navigation */}
-                    <div className="hidden md:flex space-x-8 items-center">
-                        {navLinks.map((link) => (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                className="text-gray-600 hover:text-black transition-colors font-medium"
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
+                    {/* Right: Contact Links */}
+                    <div className="flex gap-4 items-center">
+                        <a
+                            href={`mailto:${personalInfo.email}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-green-400 transition-colors"
+                            aria-label="Email"
+                            title={personalInfo.email}
+                        >
+                            <Mail size={20} />
+                        </a>
+                        <a
+                            href={personalInfo.links.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-blue-400 transition-colors"
+                            aria-label="LinkedIn"
+                        >
+                            <Linkedin size={20} />
+                        </a>
+                        <a
+                            href={personalInfo.links.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-gray-200 transition-colors"
+                            aria-label="GitHub"
+                        >
+                            <Github size={20} />
+                        </a>
                         <a
                             href={personalInfo.links.resume}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-5 py-2.5 rounded-full bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-colors"
+                            className="px-3 py-1.5 text-xs font-mono bg-gray-800 text-green-400 border border-green-400/30 rounded hover:bg-green-400 hover:text-gray-900 transition-all"
                         >
                             Resume
                         </a>
                     </div>
-
-                    {/* Mobile Menu Button */}
-                    <button
-                        className="md:hidden p-2 text-gray-600 hover:text-black"
-                        onClick={toggleMenu}
-                        aria-label="Toggle menu"
-                    >
-                        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                    </button>
                 </div>
             </div>
-
-            {/* MOBILE MENU LOGIC */}
-            {isMenuOpen && (
-                <>
-                    {/* 1. THE BLUR OVERLAY (Using the custom CSS class) */}
-                    <div
-                        className="mobile-menu-overlay md:hidden"
-                        onClick={() => setIsMenuOpen(false)}
-                    />
-
-                    {/* 2. THE DROPDOWN MENU */}
-                    <div className="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl z-50">
-                        {/* ... keep the menu content exactly the same ... */}
-                        <div className="px-4 pt-2 pb-6 space-y-2">
-                            {navLinks.map((link) => (
-                                <Link
-                                    key={link.name}
-                                    href={link.href}
-                                    className="block px-3 py-3 text-base font-medium text-gray-600 hover:text-black hover:bg-gray-50 rounded-md"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    {link.name}
-                                </Link>
-                            ))}
-                            <div className="pt-4">
-                                <a
-                                    href={personalInfo.links.resume}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block w-full text-center px-4 py-3 rounded-md bg-black text-white font-medium hover:bg-gray-800"
-                                >
-                                    Download Resume
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </>
-            )}
         </nav>
     );
 }

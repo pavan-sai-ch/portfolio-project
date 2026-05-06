@@ -1,11 +1,12 @@
 import { skills } from '@/lib/data';
 import React from "react";
+
 export default function Skills() {
     return (
-        <section id="skills" className="py-20 bg-gray-50 border-t border-gray-200">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50 border-t border-gray-800">
+            <div className="max-w-6xl mx-auto">
 
-                <h2 className="text-3xl font-bold text-gray-900 mb-12">
+                <h2 className="text-3xl font-bold text-white mb-12">
                     Technical Skills
                 </h2>
 
@@ -13,14 +14,17 @@ export default function Skills() {
 
                     {Object.entries(skills).map(([category, items]) => (
                         <div key={category}>
-                            <h3 className="text-lg font-bold text-gray-900 mb-4 capitalize">
-                                {category}
+                            <h3 className="text-lg font-bold text-green-400 mb-4 capitalize font-mono">
+                                $ {category}
                             </h3>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="space-y-2">
                                 {items.map((skill) => (
-                                    <span key={skill} className="px-3 py-1 bg-white border border-gray-200 rounded-md text-sm text-gray-700 hover:border-primary-300 hover:shadow-sm transition-all cursor-default">
-                    {skill}
-                  </span>
+                                    <div
+                                        key={skill}
+                                        className="px-3 py-2 bg-gray-800 border border-gray-700 rounded text-sm text-gray-300 hover:border-green-500 hover:text-green-400 transition-all cursor-default font-mono"
+                                    >
+                                        • {skill}
+                                    </div>
                                 ))}
                             </div>
                         </div>

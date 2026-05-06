@@ -3,14 +3,32 @@
 @tailwind utilities;
 
 :root {
-    --foreground-rgb: 0, 0, 0;
+    --foreground-rgb: 229, 231, 235;
+    --background-rgb: 17, 24, 39;
 }
 
 body {
     color: rgb(var(--foreground-rgb));
-    background: #ffffff;
+    background: #111827;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+/* Terminal styles */
+.terminal-container {
+    font-family: "Monaco", "Courier New", monospace;
+    background: #0a0e27;
+    border: 1px solid #1f2937;
+    border-radius: 0.5rem;
+}
+
+.terminal-input {
+    font-family: "Monaco", "Courier New", monospace;
+}
+
+.terminal-output {
+    font-family: "Monaco", "Courier New", monospace;
+    color: #10b981;
 }
 
 @layer utilities {
