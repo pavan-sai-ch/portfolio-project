@@ -18,50 +18,55 @@ export const skills = {
         "JavaScript",
         "TypeScript",
         "Swift",
-        "Python",
+        "Python","PHP","R",
         "Java",
         "C++",
-        "PHP",
         "SQL",
     ],
     frontend: [
         "React",
         "React Native",
+        "SwiftUI",
         "Next.js",
         "Tailwind CSS",
         "Bootstrap",
         "HTML5/CSS3",
     ],
-    backend: ["Node.js", "Express", "Flask", "PostgreSQL", "MySQL", "MongoDB", "Cassandra", "Neo4j"],
+    backend: ["Node.js", "Express", "FastAPI", "Flask", "PostgreSQL", "MySQL", "MongoDB", "Cassandra", "Neo4j"],
     tools: [
-        "Claude Code",
-        "Git",
-        "GitHub",
-        "AWS S3",
+        "Claude Code", "Codex", "Gemini",
+        "Git/GitHub",
+        "AWS EC2,S3",
         "Docker",
         "Kubernetes",
         "Firebase",
         "Vercel",
         "Render",
-        "Postman",
         "Tableau",
     ],
 };
 
 export const experience = [
     {
+        company: "StreetCare",
+        role: "iOS Developer Volunteer (Remote)",
+        period: "Feb 2026 – Present",
+        description:
+            "Contributing as volunteer iOS developer for a non-profit helping homeless communities. Adding new features and resolving bugs in production Swift and SwiftUI applications. Integrating Firestore as real-time cloud database backend, managing data synchronization between iOS app and backend services. Performing technical root cause analysis, peer code reviews, and participating in full SDLC: design, development, testing, and release.",
+    },
+    {
         company: "University of Central Missouri",
-        role: "Teaching Assistant - Algorithms",
+        role: "Graduate Teaching Assistant – Algorithms & Data Structures",
         period: "Jan 2025 – Dec 2025",
         description:
-            "Evaluated 500+ assignments involving pseudo-code and flowcharts. Assessed solutions for logical correctness and efficiency (Time Complexity/Big O) and provided feedback.",
+            "Supported Design and Analysis of Algorithms course for 50+ undergraduate students, evaluating 500+ assignments for logical correctness, time complexity (Big O), and algorithmic efficiency. Provided structured written feedback on pseudocode, flowcharts, and implementation quality, mentoring students on optimal data structure selection and scalable system design. Collaborated with faculty to resolve curriculum conflicts, develop course content, and deliver improvements with high ownership and minimal oversight.",
     },
     {
         company: "Dhanush Infotech Pvt Ltd",
-        role: "React Native Intern",
+        role: "React Native Developer Intern",
         period: "Sep 2022 – Dec 2022",
         description:
-            "Built 50+ UI components for mobile apps and integrated 100+ APIs. Implemented deep linking with Redux and push notifications using Firebase. Optimized UI performance by integrating open-source packages.",
+            "Built and shipped production iOS and Android mobile features across the full React Native stack, publishing 7 production app updates to both App Store and Play Store. Architected 50+ modular UI components, applied memoization achieving 80% faster turnaround across 20+ components, and improved UI responsiveness by 70% via lazy async dynamic loading. Integrated 100+ RESTful APIs with Redux state management, implemented Google OAuth and Firebase push notifications, and created 20+ deep-linked navigation flows. Designed and implemented CI/CD workflow via GitHub Actions, managed version control, and resolved complex merge conflicts in a strict Git-flow environment.",
     },
 ];
 

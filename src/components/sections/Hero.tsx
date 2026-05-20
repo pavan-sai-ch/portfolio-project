@@ -16,7 +16,7 @@ export default function Hero() {
 
                         {/* Title */}
                         <p className="text-xl md:text-2xl text-green-400 font-mono mb-8">
-                            Software Engineer | Available for Hire | Open to Relocate
+                            Full Stack Software Engineer | Available for Hire | Open to Relocate Anywhere in US
                         </p>
 
                         {/* Social Links */}

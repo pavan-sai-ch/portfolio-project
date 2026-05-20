@@ -4,8 +4,8 @@
     "hash": "96d72277da4f496c0448ed613f024069"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/next-env.d.ts": {
-    "mtime": 1778078724.18717,
-    "hash": "2a74d3909800ca5467fa83b0ab4a4890"
+    "mtime": 1778097711.3136756,
+    "hash": "d0f8375ae1199dc7acd3977fc33b78b8"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/tailwind.config.ts": {
     "mtime": 1765930545.9242592,
@@ -48,24 +48,24 @@
     "hash": "44df0df9ba1d92cb26650c2ad7b40d94"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/Hero.tsx": {
-    "mtime": 1778079901.4005656,
-    "hash": "12389d5badc2dc402004f4e87e67b6cd"
+    "mtime": 1779242639.2819335,
+    "hash": "df16671f8e39ba789cf50d7659bb088b"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/Experience.tsx": {
     "mtime": 1778078024.017502,
     "hash": "7e82c3384cd57e6c781a2c3592577940"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/Terminal.tsx": {
-    "mtime": 1778079784.3290913,
-    "hash": "f2f44471fb53c495f2f3f5630d01ba5f"
+    "mtime": 1778097943.6571703,
+    "hash": "eae5fb7cdbb4e4b636618777913a6145"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/Skills.tsx": {
     "mtime": 1778077999.7753105,
     "hash": "c6cf9507d200b3814c4dd3c7b872db10"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/src/components/sections/About.tsx": {
-    "mtime": 1778078015.861781,
-    "hash": "7044956e10ba421e6df67b9722045fc5"
+    "mtime": 1778097456.5455346,
+    "hash": "5e76efc5446b8bad50b9f5ba278e67a0"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/src/components/layout/Navbar.tsx": {
     "mtime": 1778078674.6663442,
@@ -76,8 +76,8 @@
     "hash": "80c2bf225f629bb0a7d2f4c085ce04a1"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/src/lib/data.ts": {
-    "mtime": 1778077935.4974835,
-    "hash": "9dc2c0f8dff555bae7ac6299efebdf14"
+    "mtime": 1779242997.8593326,
+    "hash": "a6a2ebee6bd4f254fd0cc637125d213e"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/README.md": {
     "mtime": 1765898624.480181,
@@ -88,11 +88,11 @@
     "hash": "8ee39dcfe68a23b3797b02648930d699"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/public/resume-pavan.pdf": {
-    "mtime": 1769582818.7677248,
-    "hash": "a08588c40da9ef0ede5ce09ab905a5c1"
+    "mtime": 1779241063.7707782,
+    "hash": "3ea9515695d8f065fe6b172524b1ca1d"
   },
   "/Users/pavansai/Documents/coding/portfolio-project/public/images/profile.JPG": {
     "mtime": 1775699807.0,
-    "hash": "037768f2c5a3a3840e3ffdd91bf7c3a2"
+    "hash": "669d3585a970cc3627918f63c624827d"
   }
 }
