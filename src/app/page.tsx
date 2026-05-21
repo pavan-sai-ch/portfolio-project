@@ -15,16 +15,16 @@ export default function Home() {
             <Navbar />
             <Hero />
             <Terminal />
-
+            <FadeIn>
+                <Experience />
+            </FadeIn>
             <FadeIn>
                 <Projects />
             </FadeIn>
             <FadeIn>
                 <Skills />
             </FadeIn>
-            <FadeIn>
-                <Experience />
-            </FadeIn>
+
             <FadeIn>
                 <About />
             </FadeIn>

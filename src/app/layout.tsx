@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
     title: 'Pavan Sai Chilukala | Software Engineer',
-    description: 'Full Stack & Mobile Developer Portfolio - Interactive CLI Terminal Interface',
+    description: 'Full Stack & Mobile Developer Portfolio',
 };
 
 export default function RootLayout({
