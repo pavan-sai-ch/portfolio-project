@@ -62,11 +62,11 @@ export const experience = [
             "Supported Design and Analysis of Algorithms course for 50+ undergraduate students, evaluating 500+ assignments for logical correctness, time complexity (Big O), and algorithmic efficiency. Provided structured written feedback on pseudocode, flowcharts, and implementation quality, mentoring students on optimal data structure selection and scalable system design. Collaborated with faculty to resolve curriculum conflicts, develop course content, and deliver improvements with high ownership and minimal oversight.",
     },
     {
-        company: "Dhanush Infotech Pvt Ltd",
-        role: "React Native Developer Intern",
-        period: "Sep 2022 – Dec 2022",
+        company: "Dhanush Healthcare Systems",
+        role: "Software Engineer",
+        period: "Sep 2022 - Nov 2023",
         description:
-            "Built and shipped production iOS and Android mobile features across the full React Native stack, publishing 7 production app updates to both App Store and Play Store. Architected 50+ modular UI components, applied memoization achieving 80% faster turnaround across 20+ components, and improved UI responsiveness by 70% via lazy async dynamic loading. Integrated 100+ RESTful APIs with Redux state management, implemented Google OAuth and Firebase push notifications, and created 20+ deep-linked navigation flows. Designed and implemented CI/CD workflow via GitHub Actions, managed version control, and resolved complex merge conflicts in a strict Git-flow environment.",
+            "Built 60+ modular UI components to enhance frontend scalability, applied memoization and open-source libraries across 30+ existing components achieving 80% faster TAT. Integrated 150+ RESTful APIs for real-time mobile/backend synchronization with complex state management, used lazy async dynamic loading to achieve 70% faster UI responsiveness. Published 16 application updates to App Store and Play Store, integrated Google OAuth and leveraged Firebase to create 35+ dynamic deep-linked (Redux) navigation flows. Managed version control and complex merge conflicts in a strict Git-flow environment, designed and implemented CI/CD workflows via GitHub Actions for stable production releases.",
     },
 ];
 
