@@ -1111,9 +1111,9 @@
       "source_file": "src/components/sections/Terminal.tsx",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_terminal_tsx",
-      "target": "sections_terminal_handlekeydown",
-      "confidence_score": 1.0
+      "target": "sections_terminal_handlekeydown"
     },
     {
       "relation": "calls",
@@ -1154,9 +1154,9 @@
       "source_file": "src/components/sections/About.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_about_tsx",
-      "target": "src_lib_data_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_data_ts"
     },
     {
       "relation": "contains",
@@ -1216,9 +1216,9 @@
       "source_file": "README.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "portfolio_project_readme_getting_started",
-      "confidence_score": 1.0
+      "target": "portfolio_project_readme_getting_started"
     },
     {
       "relation": "contains",
@@ -1226,9 +1226,9 @@
       "source_file": "README.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "portfolio_project_readme_learn_more",
-      "confidence_score": 1.0
+      "target": "portfolio_project_readme_learn_more"
     },
     {
       "relation": "contains",
@@ -1236,9 +1236,9 @@
       "source_file": "README.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "portfolio_project_readme_deploy_on_vercel",
-      "confidence_score": 1.0
+      "target": "portfolio_project_readme_deploy_on_vercel"
     },
     {
       "relation": "contains",
@@ -1246,9 +1246,9 @@
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_project_readme_getting_started",
-      "target": "portfolio_project_readme_codeblock_1",
-      "confidence_score": 1.0
+      "target": "portfolio_project_readme_codeblock_1"
     },
     {
       "relation": "contains",
@@ -1256,9 +1256,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_md",
-      "target": "portfolio_project_claude_graphify",
-      "confidence_score": 1.0
+      "target": "portfolio_project_claude_graphify"
     },
     {
       "relation": "references",
@@ -1699,5 +1699,5 @@
       "source_file": "src/app/page.tsx"
     }
   ],
-  "built_at_commit": "b7368f54c05d700fbd81c68c584f6dff6bbaa31e"
+  "built_at_commit": "fc57fb675af5a270a6c2e353e7a029bc870a29b5"
 }

@@ -48,18 +48,18 @@ export const skills = {
 
 export const experience = [
     {
-        company: "StreetCare",
-        role: "iOS Developer Volunteer (Remote)",
-        period: "Feb 2026 – Present",
+        company: "Harmoney Financial Technologies",
+        role: "Software Engineer (Remote)",
+        period: "May 2026 – Present",
         description:
-            "Contributing as volunteer iOS developer for a non-profit helping homeless communities. Adding new features and resolving bugs in production Swift and SwiftUI applications. Integrating Firestore as real-time cloud database backend, managing data synchronization between iOS app and backend services. Performing technical root cause analysis, peer code reviews, and participating in full SDLC: design, development, testing, and release.",
+            "Building an Agentic Financial OS with a KYA (Know Your Agent) protocol — infrastructure enabling AI agents to initiate and settle payments between companies autonomously. Full-stack development in React and Node.js with a Supabase backend, Stripe and Plaid for payment processing and financial data aggregation, and Auth0 for multi-tenant agent identity management, deployed on Railway and Vercel. Designing agentic workflow orchestration for cross-company financial transactions at a fast-moving startup with full ownership and minimal direction.",
     },
     {
-        company: "University of Central Missouri",
-        role: "Graduate Teaching Assistant – Algorithms & Data Structures",
-        period: "Jan 2025 – Dec 2025",
+        company: "StreetCare",
+        role: "iOS Developer Volunteer (Remote)",
+        period: "Feb 2026 – June 2026",
         description:
-            "Supported Design and Analysis of Algorithms course for 50+ undergraduate students, evaluating 500+ assignments for logical correctness, time complexity (Big O), and algorithmic efficiency. Provided structured written feedback on pseudocode, flowcharts, and implementation quality, mentoring students on optimal data structure selection and scalable system design. Collaborated with faculty to resolve curriculum conflicts, develop course content, and deliver improvements with high ownership and minimal oversight.",
+            "Contributing as volunteer iOS developer for a non-profit helping homeless communities. Adding new features and resolving bugs in production Swift and SwiftUI applications. Integrating Firestore as real-time cloud database backend, managing data synchronization between iOS app and backend services. Performing technical root cause analysis, peer code reviews, and participating in full SDLC: design, development, testing, and release.",
     },
     {
         company: "Dhanush Healthcare Systems",
@@ -67,6 +67,13 @@ export const experience = [
         period: "Sep 2022 - Nov 2023",
         description:
             "Built 60+ modular UI components to enhance frontend scalability, applied memoization and open-source libraries across 30+ existing components achieving 80% faster TAT. Integrated 150+ RESTful APIs for real-time mobile/backend synchronization with complex state management, used lazy async dynamic loading to achieve 70% faster UI responsiveness. Published 16 application updates to App Store and Play Store, integrated Google OAuth and leveraged Firebase to create 35+ dynamic deep-linked (Redux) navigation flows. Managed version control and complex merge conflicts in a strict Git-flow environment, designed and implemented CI/CD workflows via GitHub Actions for stable production releases.",
+    },
+    {
+        company: "University of Central Missouri",
+        role: "Graduate Teaching Assistant – Algorithms & Data Structures",
+        period: "Jan 2025 – Dec 2025",
+        description:
+            "Supported Design and Analysis of Algorithms course for 50+ undergraduate students, evaluating 500+ assignments for logical correctness, time complexity (Big O), and algorithmic efficiency. Provided structured written feedback on pseudocode, flowcharts, and implementation quality, mentoring students on optimal data structure selection and scalable system design. Collaborated with faculty to resolve curriculum conflicts, develop course content, and deliver improvements with high ownership and minimal oversight.",
     },
 ];
 
