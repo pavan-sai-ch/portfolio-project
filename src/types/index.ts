@@ -7,14 +7,13 @@ export interface Project {
         demo?: string;
         code: string;
     };
-    image?: string;
 }
 
 export interface Experience {
     company: string;
     role: string;
     period: string;
-    description: string;
+    description: string[];
 }
 
 export interface TerminalLine {

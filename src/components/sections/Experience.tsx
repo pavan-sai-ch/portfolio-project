@@ -36,9 +36,17 @@ export default function Experience() {
                                     <div className="text-lg text-gray-400 font-medium mb-4">
                                         {item.company}
                                     </div>
-                                    <p className="text-gray-400 leading-relaxed">
-                                        {item.description}
-                                    </p>
+                                    <ul className="space-y-2 list-none">
+                                        {item.description.map((point, i) => (
+                                            <li
+                                                key={i}
+                                                className="text-gray-400 leading-relaxed flex gap-2"
+                                            >
+                                                <span className="text-green-400 flex-shrink-0">▹</span>
+                                                <span>{point}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             </div>
                         </div>

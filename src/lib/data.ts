@@ -15,34 +15,40 @@ export const personalInfo = {
 
 export const skills = {
     languages: [
-        "JavaScript",
-        "TypeScript",
+        "JavaScript / TypeScript",
         "Swift",
-        "Python","PHP","R",
-        "Java",
-        "C++",
+        "Python",
         "SQL",
     ],
     frontend: [
-        "React",
-        "React Native",
-        "SwiftUI",
-        "Next.js",
+        "React / Next.js",
+        "React Native / SwiftUI",
         "Tailwind CSS",
-        "Bootstrap",
-        "HTML5/CSS3",
+        "Redux",
     ],
-    backend: ["Node.js", "Express", "FastAPI", "Flask", "PostgreSQL", "MySQL", "MongoDB", "Cassandra", "Neo4j"],
-    tools: [
-        "Claude Code", "Codex", "Gemini",
-        "Git/GitHub",
-        "AWS EC2,S3",
-        "Docker",
-        "Kubernetes",
+    backend: [
+        "Node.js / Express",
+        "GraphQL / REST APIs",
+        "FastAPI",
+        "Auth0 / Stripe / Plaid",
+    ],
+    databases: [
+        "Supabase (Postgres)",
+        "MongoDB",
+        "Neo4j",
         "Firebase",
-        "Vercel",
-        "Render",
-        "Tableau",
+    ],
+    ai: [
+        "OpenAI / Claude APIs",
+        "LLM Integration",
+        "Prompt Engineering",
+        "LangGraph",
+    ],
+    cloud: [
+        "AWS",
+        "Docker / Kubernetes",
+        "CI/CD",
+        "Vercel / Railway",
     ],
 };
 
@@ -51,29 +57,40 @@ export const experience = [
         company: "Harmoney Financial Technologies",
         role: "Software Engineer (Remote)",
         period: "May 2026 – Present",
-        description:
-            "Building an Agentic Financial OS with a KYA (Know Your Agent) protocol — infrastructure enabling AI agents to initiate and settle payments between companies autonomously. Full-stack development in React and Node.js with a Supabase backend, Stripe and Plaid for payment processing and financial data aggregation, and Auth0 for multi-tenant agent identity management, deployed on Railway and Vercel. Designing agentic workflow orchestration for cross-company financial transactions at a fast-moving startup with full ownership and minimal direction.",
+        description: [
+            "Building an Agentic Financial OS with a KYA (Know Your Agent) protocol — infrastructure enabling AI agents to initiate and settle payments between companies autonomously.",
+            "Full-stack development in React and Node.js with a Supabase backend, Stripe and Plaid for payment processing and financial data aggregation, and Auth0 for multi-tenant agent identity management, deployed on Railway and Vercel.",
+            "Designing agentic workflow orchestration for cross-company financial transactions at a fast-moving startup with full ownership and minimal direction.",
+        ],
     },
     {
         company: "StreetCare",
         role: "iOS Developer Volunteer (Remote)",
         period: "Feb 2026 – June 2026",
-        description:
-            "Contributing as volunteer iOS developer for a non-profit helping homeless communities. Adding new features and resolving bugs in production Swift and SwiftUI applications. Integrating Firestore as real-time cloud database backend, managing data synchronization between iOS app and backend services. Performing technical root cause analysis, peer code reviews, and participating in full SDLC: design, development, testing, and release.",
+        description: [
+            "Built and shipped new features and resolved bugs in a production Swift and SwiftUI iOS application used by field workers supporting homeless communities across the US.",
+            "Integrated Firestore for real-time cloud sync and CoreData for local persistence.",
+            "Performed technical root cause analysis, peer code reviews, and release management via App Store Connect and TestFlight.",
+        ],
     },
     {
         company: "Dhanush Healthcare Systems",
         role: "Software Engineer",
         period: "Sep 2022 - Nov 2023",
-        description:
-            "Built 60+ modular UI components to enhance frontend scalability, applied memoization and open-source libraries across 30+ existing components achieving 80% faster TAT. Integrated 150+ RESTful APIs for real-time mobile/backend synchronization with complex state management, used lazy async dynamic loading to achieve 70% faster UI responsiveness. Published 16 application updates to App Store and Play Store, integrated Google OAuth and leveraged Firebase to create 35+ dynamic deep-linked (Redux) navigation flows. Managed version control and complex merge conflicts in a strict Git-flow environment, designed and implemented CI/CD workflows via GitHub Actions for stable production releases.",
+        description: [
+            "Built 60+ modular UI components to enhance frontend scalability; applied memoization across 30+ components achieving 80% faster TAT; used lazy async loading to achieve 70% faster UI responsiveness.",
+            "Integrated 150+ RESTful APIs for real-time mobile/backend synchronization; published 16 production releases to App Store and Play Store.",
+            "Integrated Google OAuth and leveraged Firebase to create 35+ dynamic deep-linked (Redux) navigation flows; managed CI/CD via GitHub Actions in a strict Git-flow environment.",
+        ],
     },
     {
         company: "University of Central Missouri",
         role: "Graduate Teaching Assistant – Algorithms & Data Structures",
         period: "Jan 2025 – Dec 2025",
-        description:
-            "Supported Design and Analysis of Algorithms course for 50+ undergraduate students, evaluating 500+ assignments for logical correctness, time complexity (Big O), and algorithmic efficiency. Provided structured written feedback on pseudocode, flowcharts, and implementation quality, mentoring students on optimal data structure selection and scalable system design. Collaborated with faculty to resolve curriculum conflicts, develop course content, and deliver improvements with high ownership and minimal oversight.",
+        description: [
+            "Evaluated 500+ assignments for logical correctness, time complexity (Big O), and algorithmic efficiency across 50+ undergraduate students; provided structured written feedback on pseudocode and implementation quality.",
+            "Mentored students on optimal data structure selection and scalable system design; collaborated with faculty to develop course content.",
+        ],
     },
 ];
 
@@ -88,7 +105,6 @@ export const projects = [
             // Add your deployed link here later if you release a dmg/app
             code: "https://github.com/pavan-sai-ch/volumeMixer",
         },
-        image: "/images/projects/volume-mixer.png",
     },
     {
         title: "The Daily Wag",
@@ -100,7 +116,6 @@ export const projects = [
             // Add your deployed link here later
             code: "https://github.com/pavan-sai-ch/daily-wag-frontend",
         },
-        image: "/images/projects/vet-clinic.png",
     },
     {
         title: "C3-Carpool Connect",
@@ -111,7 +126,6 @@ export const projects = [
         links: {
             code: "https://github.com/pavan-sai-ch/carpool-frontend",
         },
-        image: "/images/projects/carpool.png",
     },
     {
         title: "Data Visualization Dashboards",
@@ -131,7 +145,6 @@ export const projects = [
         links: {
             code: "https://github.com/pavan-sai-ch",
         },
-        image: "/images/projects/biometrics.png",
     },
     {
         title: "Black Friday Sales Prediction",
@@ -214,7 +227,9 @@ Run 'ls' to see all available sections`,
         skills: `Languages: ${skills.languages.join(", ")}
 Frontend: ${skills.frontend.join(", ")}
 Backend: ${skills.backend.join(", ")}
-Tools: ${skills.tools.join(", ")}`,
+Databases: ${skills.databases.join(", ")}
+AI: ${skills.ai.join(", ")}
+Cloud: ${skills.cloud.join(", ")}`,
     },
     currentDir: "/portfolio",
     listings: ["about", "projects", "skills", "experience", "contact"],

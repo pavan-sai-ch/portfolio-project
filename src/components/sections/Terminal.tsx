@@ -63,7 +63,9 @@ Projects: ${projects.length} projects`;
                 return `Languages: ${skills.languages.join(", ")}
 Frontend: ${skills.frontend.join(", ")}
 Backend: ${skills.backend.join(", ")}
-Tools: ${skills.tools.join(", ")}`;
+Databases: ${skills.databases.join(", ")}
+AI: ${skills.ai.join(", ")}
+Cloud: ${skills.cloud.join(", ")}`;
             case "projects":
                 return projects.map(p => `${p.title}: ${p.tags.join(", ")}`).join("\n");
             case "experience":

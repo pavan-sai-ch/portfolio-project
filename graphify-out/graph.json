@@ -68,7 +68,7 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "id": "postcss_config_mjs",
-      "community": 11,
+      "community": 12,
       "norm_label": "postcss.config.mjs"
     },
     {
@@ -77,7 +77,7 @@
       "source_file": "next-env.d.ts",
       "source_location": "L1",
       "id": "next_env_d_ts",
-      "community": 12,
+      "community": 13,
       "norm_label": "next-env.d.ts"
     },
     {
@@ -86,7 +86,7 @@
       "source_file": "tailwind.config.ts",
       "source_location": "L1",
       "id": "tailwind_config_ts",
-      "community": 13,
+      "community": 14,
       "norm_label": "tailwind.config.ts"
     },
     {
@@ -95,7 +95,7 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L1",
       "id": "eslint_config_mjs",
-      "community": 14,
+      "community": 15,
       "norm_label": "eslint.config.mjs"
     },
     {
@@ -104,7 +104,7 @@
       "source_file": "next.config.ts",
       "source_location": "L1",
       "id": "next_config_ts",
-      "community": 15,
+      "community": 16,
       "norm_label": "next.config.ts"
     },
     {
@@ -122,7 +122,7 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L1",
       "id": "src_app_layout_tsx",
-      "community": 8,
+      "community": 9,
       "norm_label": "layout.tsx"
     },
     {
@@ -131,7 +131,7 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L13",
       "id": "app_layout_rootlayout",
-      "community": 8,
+      "community": 9,
       "norm_label": "rootlayout()"
     },
     {
@@ -246,7 +246,7 @@
       "label": "handleSubmit()",
       "file_type": "code",
       "source_file": "src/components/sections/Terminal.tsx",
-      "source_location": "L83",
+      "source_location": "L85",
       "id": "sections_terminal_handlesubmit",
       "community": 1,
       "norm_label": "handlesubmit()"
@@ -255,7 +255,7 @@
       "label": "handleKeyDown()",
       "file_type": "code",
       "source_file": "src/components/sections/Terminal.tsx",
-      "source_location": "L109",
+      "source_location": "L111",
       "id": "sections_terminal_handlekeydown",
       "community": 1,
       "norm_label": "handlekeydown()"
@@ -273,7 +273,7 @@
       "label": "Skills()",
       "file_type": "code",
       "source_file": "src/components/sections/Skills.tsx",
-      "source_location": "L4",
+      "source_location": "L8",
       "id": "sections_skills_skills",
       "community": 0,
       "norm_label": "skills()"
@@ -383,7 +383,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "claude_md",
-      "community": 9,
+      "community": 10,
       "norm_label": "claude.md"
     },
     {
@@ -392,7 +392,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "portfolio_project_claude_graphify",
-      "community": 9,
+      "community": 10,
       "norm_label": "graphify"
     },
     {
@@ -439,7 +439,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "eslint.config",
       "id": "eslint_config"
     },
@@ -465,7 +465,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "project interface",
       "id": "types_project"
     },
@@ -478,7 +478,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "experience interface",
       "id": "types_experience"
     },
@@ -491,7 +491,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "norm_label": "terminalline interface",
       "id": "types_terminalline"
     },
@@ -504,7 +504,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "clicommand interface",
       "id": "types_clicommand"
     },
@@ -517,7 +517,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "personalinfo",
       "id": "data_personalinfo"
     },
@@ -530,7 +530,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "norm_label": "skills",
       "id": "data_skills"
     },
@@ -543,7 +543,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "experience",
       "id": "data_experience"
     },
@@ -556,7 +556,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "norm_label": "projects",
       "id": "data_projects"
     },
@@ -569,7 +569,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "norm_label": "cliconfig",
       "id": "data_cliconfig"
     },
@@ -608,7 +608,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 6,
       "norm_label": "home page",
       "id": "page_home"
     },
@@ -621,7 +621,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "footer",
       "id": "footer_footer"
     },
@@ -634,7 +634,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "navbar",
       "id": "navbar_navbar"
     },
@@ -647,7 +647,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 6,
       "norm_label": "about",
       "id": "about_about"
     },
@@ -660,7 +660,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "experience section",
       "id": "experience_experience"
     },
@@ -673,7 +673,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "hero",
       "id": "hero_hero"
     },
@@ -686,7 +686,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "projects section",
       "id": "projects_projects"
     },
@@ -699,7 +699,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "skills section",
       "id": "skills_skills"
     },
@@ -712,7 +712,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "norm_label": "terminal",
       "id": "terminal_terminal"
     },
@@ -725,7 +725,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 11,
       "norm_label": "fadein",
       "id": "fadein_fadein"
     },
@@ -738,7 +738,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "projectcard",
       "id": "projectcard_projectcard"
     },
@@ -751,7 +751,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "githubicon",
       "id": "socialicons_githubicon"
     },
@@ -764,7 +764,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "linkedinicon",
       "id": "socialicons_linkedinicon"
     },
@@ -777,7 +777,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 6,
       "norm_label": "portfolio readme",
       "id": "readme_portfolio"
     },
@@ -791,7 +791,7 @@
       "author": null,
       "contributor": null,
       "rationale": "An interactive CLI terminal is used as the hero interaction pattern, allowing users to explore portfolio content via typed commands \u2014 a distinctive developer-persona design choice.",
-      "community": 3,
+      "community": 2,
       "norm_label": "terminal cli ui pattern",
       "id": "design_terminalui"
     },
@@ -805,7 +805,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Sections use a reusable FadeIn wrapper (framer-motion whileInView) for progressive disclosure \u2014 keeps each section component unaware of scroll animation logic.",
-      "community": 10,
+      "community": 11,
       "norm_label": "fadein scroll animation pattern",
       "id": "design_fadein_animation"
     },
@@ -819,7 +819,7 @@
       "author": null,
       "contributor": null,
       "rationale": "All portfolio content (personalInfo, skills, experience, projects, cliConfig) is centralized in a single data file rather than scattered across components, enabling single-source-of-truth updates.",
-      "community": 2,
+      "community": 3,
       "norm_label": "centralized data layer in lib/data.ts",
       "id": "design_centralized_data"
     }
@@ -1699,5 +1699,5 @@
       "source_file": "src/app/page.tsx"
     }
   ],
-  "built_at_commit": "fc57fb675af5a270a6c2e353e7a029bc870a29b5"
+  "built_at_commit": "95a64fa8d5c7a62de5b4292e2a606ba080251c3d"
 }

@@ -1,6 +1,10 @@
 import { skills } from '@/lib/data';
 import React from "react";
 
+const categoryLabels: Record<string, string> = {
+    ai: "AI Tools",
+};
+
 export default function Skills() {
     return (
         <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50 border-t border-gray-800">
@@ -15,7 +19,7 @@ export default function Skills() {
                     {Object.entries(skills).map(([category, items]) => (
                         <div key={category}>
                             <h3 className="text-lg font-bold text-green-400 mb-4 capitalize font-mono">
-                                $ {category}
+                                $ {categoryLabels[category] ?? category}
                             </h3>
                             <div className="space-y-2">
                                 {items.map((skill) => (
