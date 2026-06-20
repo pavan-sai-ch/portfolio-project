@@ -55,7 +55,7 @@ export const skills = {
 export const experience = [
     {
         company: "Harmoney Financial Technologies",
-        role: "Software Engineer (Remote)",
+        role: "Founding Software Engineer (Remote)",
         period: "May 2026 – Present",
         description: [
             "Building an Agentic Financial OS with a KYA (Know Your Agent) protocol — infrastructure enabling AI agents to initiate and settle payments between companies autonomously.",
