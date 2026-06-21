@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# graphify — regenerable AST/semantic cache (graph.json, GRAPH_REPORT.md, wiki kept)
+graphify-out/cache/

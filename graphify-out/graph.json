@@ -122,7 +122,7 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L1",
       "id": "src_app_layout_tsx",
-      "community": 9,
+      "community": 10,
       "norm_label": "layout.tsx"
     },
     {
@@ -131,7 +131,7 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L13",
       "id": "app_layout_rootlayout",
-      "community": 9,
+      "community": 10,
       "norm_label": "rootlayout()"
     },
     {
@@ -142,6 +142,33 @@
       "id": "src_app_page_tsx",
       "community": 0,
       "norm_label": "page.tsx"
+    },
+    {
+      "label": "Home()",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L12",
+      "id": "app_page_home",
+      "community": 0,
+      "norm_label": "home()"
+    },
+    {
+      "label": "CalendlyButton.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/CalendlyButton.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_calendlybutton_tsx",
+      "community": 0,
+      "norm_label": "calendlybutton.tsx"
+    },
+    {
+      "label": "CalendlyButton()",
+      "file_type": "code",
+      "source_file": "src/components/ui/CalendlyButton.tsx",
+      "source_location": "L14",
+      "id": "ui_calendlybutton_calendlybutton",
+      "community": 0,
+      "norm_label": "calendlybutton()"
     },
     {
       "label": "ProjectCard.tsx",
@@ -210,7 +237,7 @@
       "label": "Hero()",
       "file_type": "code",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "sections_hero_hero",
       "community": 0,
       "norm_label": "hero()"
@@ -230,7 +257,7 @@
       "source_file": "src/components/sections/Terminal.tsx",
       "source_location": "L1",
       "id": "src_components_sections_terminal_tsx",
-      "community": 1,
+      "community": 7,
       "norm_label": "terminal.tsx"
     },
     {
@@ -239,7 +266,7 @@
       "source_file": "src/components/sections/Terminal.tsx",
       "source_location": "L29",
       "id": "sections_terminal_executecommand",
-      "community": 1,
+      "community": 7,
       "norm_label": "executecommand()"
     },
     {
@@ -248,7 +275,7 @@
       "source_file": "src/components/sections/Terminal.tsx",
       "source_location": "L85",
       "id": "sections_terminal_handlesubmit",
-      "community": 1,
+      "community": 7,
       "norm_label": "handlesubmit()"
     },
     {
@@ -257,7 +284,7 @@
       "source_file": "src/components/sections/Terminal.tsx",
       "source_location": "L111",
       "id": "sections_terminal_handlekeydown",
-      "community": 1,
+      "community": 7,
       "norm_label": "handlekeydown()"
     },
     {
@@ -300,7 +327,7 @@
       "label": "Navbar()",
       "file_type": "code",
       "source_file": "src/components/layout/Navbar.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "layout_navbar_navbar",
       "community": 0,
       "norm_label": "navbar()"
@@ -318,7 +345,7 @@
       "label": "Footer()",
       "file_type": "code",
       "source_file": "src/components/layout/Footer.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "layout_footer_footer",
       "community": 1,
       "norm_label": "footer()"
@@ -383,7 +410,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "claude_md",
-      "community": 10,
+      "community": 11,
       "norm_label": "claude.md"
     },
     {
@@ -392,7 +419,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "portfolio_project_claude_graphify",
-      "community": 10,
+      "community": 11,
       "norm_label": "graphify"
     },
     {
@@ -465,7 +492,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 3,
       "norm_label": "project interface",
       "id": "types_project"
     },
@@ -478,7 +505,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "experience interface",
       "id": "types_experience"
     },
@@ -517,7 +544,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 8,
       "norm_label": "personalinfo",
       "id": "data_personalinfo"
     },
@@ -543,7 +570,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "experience",
       "id": "data_experience"
     },
@@ -634,7 +661,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 8,
       "norm_label": "navbar",
       "id": "navbar_navbar"
     },
@@ -660,7 +687,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "experience section",
       "id": "experience_experience"
     },
@@ -673,7 +700,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 8,
       "norm_label": "hero",
       "id": "hero_hero"
     },
@@ -686,7 +713,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "projects section",
       "id": "projects_projects"
     },
@@ -699,7 +726,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 2,
       "norm_label": "skills section",
       "id": "skills_skills"
     },
@@ -725,7 +752,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 6,
       "norm_label": "fadein",
       "id": "fadein_fadein"
     },
@@ -738,7 +765,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 3,
       "norm_label": "projectcard",
       "id": "projectcard_projectcard"
     },
@@ -751,7 +778,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 3,
       "norm_label": "githubicon",
       "id": "socialicons_githubicon"
     },
@@ -805,7 +832,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Sections use a reusable FadeIn wrapper (framer-motion whileInView) for progressive disclosure \u2014 keeps each section component unaware of scroll animation logic.",
-      "community": 11,
+      "community": 6,
       "norm_label": "fadein scroll animation pattern",
       "id": "design_fadein_animation"
     },
@@ -819,7 +846,7 @@
       "author": null,
       "contributor": null,
       "rationale": "All portfolio content (personalInfo, skills, experience, projects, cliConfig) is centralized in a single data file rather than scattered across components, enabling single-source-of-truth updates.",
-      "community": 3,
+      "community": 8,
       "norm_label": "centralized data layer in lib/data.ts",
       "id": "design_centralized_data"
     }
@@ -955,6 +982,70 @@
       "confidence_score": 1.0,
       "source": "src_app_page_tsx",
       "target": "src_components_ui_fadein_tsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/CalendlyButton.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_ui_calendlybutton_tsx",
+      "target": "src_lib_data_ts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/CalendlyButton.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_ui_calendlybutton_tsx",
+      "target": "ui_calendlybutton_calendlybutton"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Hero.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_hero_tsx",
+      "target": "src_components_ui_calendlybutton_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/Navbar.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_navbar_tsx",
+      "target": "src_components_ui_calendlybutton_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_footer_tsx",
+      "target": "src_components_ui_calendlybutton_tsx"
     },
     {
       "relation": "imports_from",
@@ -1699,5 +1790,5 @@
       "source_file": "src/app/page.tsx"
     }
   ],
-  "built_at_commit": "95a64fa8d5c7a62de5b4292e2a606ba080251c3d"
+  "built_at_commit": "aa5b26f817b2b997c0e2cf1e21164384742c47eb"
 }

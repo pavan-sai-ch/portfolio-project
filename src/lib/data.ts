@@ -10,6 +10,7 @@ export const personalInfo = {
         linkedin: "https://linkedin.com/in/pavanchilukala/",
         github: "https://github.com/pavan-sai-ch",
         resume: "/resume-pavan.pdf",
+        calendly: "https://calendly.com/pavansai-ch/15min",
     },
 };
 

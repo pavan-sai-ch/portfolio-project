@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors">
                             {project.title}
                         </h3>
-                        <span className="text-sm text-gray-500 font-mono">{project.year}</span>
+                        <span className="text-sm text-gray-400 font-mono">{project.year}</span>
                     </div>
                 </div>
 
@@ -47,6 +47,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-green-400 transition-colors"
+                        aria-label={`Source code for ${project.title} (opens in new tab)`}
                     >
                         <GithubIcon size={18} />
                         Source Code
@@ -58,8 +59,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-blue-400 transition-colors"
+                            aria-label={`Live demo of ${project.title} (opens in new tab)`}
                         >
-                            <ExternalLink size={18} />
+                            <ExternalLink size={18} aria-hidden="true" />
                             Live Demo
                         </a>
                     )}

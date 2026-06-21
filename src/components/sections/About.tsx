@@ -8,12 +8,12 @@ const iconMap = {
 
 export default function About() {
     return (
-        <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <section id="about" aria-labelledby="about-heading" className="py-20 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                     <div>
-                        <h2 className="text-3xl font-bold text-white mb-6">{about.heading}</h2>
+                        <h2 id="about-heading" className="text-3xl font-bold text-white mb-6">{about.heading}</h2>
                         {about.paragraphs.map((para, i) => (
                             <p
                                 key={i}

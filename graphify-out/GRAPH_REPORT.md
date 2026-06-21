@@ -1,16 +1,16 @@
-# Graph Report - portfolio-project  (2026-06-02)
+# Graph Report - portfolio-project  (2026-06-21)
 
 ## Corpus Check
-- 22 files · ~10,394 words
+- 23 files · ~10,679 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 70 nodes · 79 edges · 19 communities (15 shown, 4 thin omitted)
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.92)
+- 73 nodes · 85 edges · 19 communities (14 shown, 5 thin omitted)
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `95a64fa8`
+- Built from commit: `aa5b26f8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,7 +23,7 @@
 - [[_COMMUNITY_Terminal CLI Interface|Terminal CLI Interface]]
 - [[_COMMUNITY_Root App Layout|Root App Layout]]
 - [[_COMMUNITY_PostCSS Config|PostCSS Config]]
-- [[_COMMUNITY_Tailwind Config|Tailwind Config]]
+- [[_COMMUNITY_Next.js Type Defs|Next.js Type Defs]]
 - [[_COMMUNITY_ESLint Config|ESLint Config]]
 - [[_COMMUNITY_Community 17|Community 17]]
 - [[_COMMUNITY_Community 18|Community 18]]
@@ -57,19 +57,15 @@
 - **Components consuming centralised lib/data.ts** — data_personalinfo, data_skills, data_experience, data_projects, data_cliconfig, navbar_navbar, hero_hero, footer_footer, experience_experience, projects_projects, skills_skills, terminal_terminal [EXTRACTED 1.00]
 - **Sections wrapped in FadeIn for scroll animation** — fadein_fadein, projects_projects, skills_skills, experience_experience, about_about [EXTRACTED 1.00]
 
-## Communities (19 total, 4 thin omitted)
-
-### Community 1 - "Animation & Experience"
-Cohesion: 0.24
-Nodes (3): executeCommand(), handleSubmit(), GithubIcon()
+## Communities (19 total, 5 thin omitted)
 
 ### Community 2 - "Centralized Data Layer"
-Cohesion: 0.47
-Nodes (6): cliConfig, projects, skills, Terminal CLI UI pattern, Terminal, TerminalLine interface
+Cohesion: 0.38
+Nodes (7): cliConfig, projects, skills, Terminal CLI UI pattern, Skills section, Terminal, TerminalLine interface
 
 ### Community 3 - "UI Components & Icons"
 Cohesion: 0.33
-Nodes (6): personalInfo, Centralized data layer in lib/data.ts, Footer, Hero, Navbar, LinkedinIcon
+Nodes (6): Footer, ProjectCard, Projects section, GithubIcon, LinkedinIcon, Project interface
 
 ### Community 4 - "File References & UI"
 Cohesion: 0.4
@@ -81,29 +77,29 @@ Nodes (4): RootLayout, next.config, postcss.config, tailwind.config
 
 ### Community 6 - "Terminal CLI Interface"
 Cohesion: 0.4
-Nodes (5): About, Home page, Projects section, Portfolio README, Skills section
-
-### Community 7 - "Root App Layout"
-Cohesion: 0.67
-Nodes (3): experience, Experience section, Experience interface
+Nodes (5): About, FadeIn scroll animation pattern, FadeIn, Home page, Portfolio README
 
 ### Community 8 - "PostCSS Config"
+Cohesion: 0.5
+Nodes (4): personalInfo, Centralized data layer in lib/data.ts, Hero, Navbar
+
+### Community 9 - "Next.js Type Defs"
 Cohesion: 0.67
-Nodes (3): ProjectCard, GithubIcon, Project interface
+Nodes (3): experience, Experience section, Experience interface
 
 ## Knowledge Gaps
 - **17 isolated node(s):** `code:bash (npm run dev)`, `Learn More`, `Deploy on Vercel`, `graphify`, `postcss.config` (+12 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Home page` connect `Terminal CLI Interface` to `ESLint Config`, `Centralized Data Layer`, `UI Components & Icons`, `Root App Layout`?**
-  _High betweenness centrality (0.069) - this node is a cross-community bridge._
-- **Why does `Terminal` connect `Centralized Data Layer` to `UI Components & Icons`, `Terminal CLI Interface`, `Root App Layout`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
+- **Why does `Home page` connect `Terminal CLI Interface` to `PostCSS Config`, `Next.js Type Defs`, `Centralized Data Layer`, `UI Components & Icons`?**
+  _High betweenness centrality (0.063) - this node is a cross-community bridge._
+- **Why does `Terminal` connect `Centralized Data Layer` to `PostCSS Config`, `Next.js Type Defs`, `Terminal CLI Interface`?**
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **Why does `Footer` connect `UI Components & Icons` to `PostCSS Config`, `Terminal CLI Interface`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `code:bash (npm run dev)`, `Learn More`, `Deploy on Vercel` to the rest of the system?**
   _17 weakly-connected nodes found - possible documentation gaps or missing edges._

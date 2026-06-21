@@ -3,10 +3,10 @@ import React from "react";
 
 export default function Experience() {
     return (
-        <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50 border-t border-gray-800">
+        <section id="experience" aria-labelledby="experience-heading" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50 border-t border-gray-800">
             <div className="max-w-4xl mx-auto">
 
-                <h2 className="text-3xl font-bold text-white mb-12 text-center">
+                <h2 id="experience-heading" className="text-3xl font-bold text-white mb-12 text-center">
                     Work Experience
                 </h2>
 
@@ -42,7 +42,7 @@ export default function Experience() {
                                                 key={i}
                                                 className="text-gray-400 leading-relaxed flex gap-2"
                                             >
-                                                <span className="text-green-400 flex-shrink-0">▹</span>
+                                                <span className="text-green-400 flex-shrink-0" aria-hidden="true">▹</span>
                                                 <span>{point}</span>
                                             </li>
                                         ))}

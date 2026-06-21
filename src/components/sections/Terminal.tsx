@@ -127,10 +127,14 @@ Resume: ${personalInfo.links.resume}`;
     };
 
     return (
-        <section id="terminal" className="py-8 px-4 sm:px-6 lg:px-8">
+        <section id="terminal" aria-label="Interactive command-line portfolio explorer" className="py-8 px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
                 <div
                     ref={terminalRef}
+                    role="log"
+                    aria-live="polite"
+                    aria-atomic="false"
+                    aria-label="Terminal output"
                     className="terminal-container min-h-96 max-h-96 overflow-y-auto p-6 rounded-lg shadow-2xl"
                 >
                     {lines.map((line, index) => (
@@ -151,16 +155,16 @@ Resume: ${personalInfo.links.resume}`;
                 {/* Input Form */}
                 <form onSubmit={handleSubmit} className="mt-4">
                     <div className="flex items-center bg-gray-900 border border-gray-700 rounded-lg px-4 py-2">
-                        <span className="text-blue-400 font-semibold mr-2">$</span>
+                        <span className="text-blue-400 font-semibold mr-2" aria-hidden="true">$</span>
                         <input
                             ref={inputRef}
                             type="text"
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             onKeyDown={handleKeyDown}
-                            onFocus={() => inputRef.current?.focus()}
                             className="flex-1 bg-transparent text-green-400 outline-none font-mono terminal-input"
                             placeholder="Type command here..."
+                            aria-label="Terminal command input. Type help for available commands."
                             autoComplete="off"
                         />
                     </div>

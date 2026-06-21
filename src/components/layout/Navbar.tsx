@@ -1,8 +1,9 @@
 "use client";
 
 import Link from 'next/link';
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Mail, Github, Linkedin, Calendar } from 'lucide-react';
 import { personalInfo } from '@/lib/data';
+import CalendlyButton from '@/components/ui/CalendlyButton';
 
 export default function Navbar() {
     return (
@@ -57,6 +58,13 @@ export default function Navbar() {
                         >
                             Resume
                         </a>
+                        <CalendlyButton
+                            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono bg-green-400 text-gray-900 rounded font-semibold hover:bg-green-300 transition-all"
+                            ariaLabel="Book a call"
+                        >
+                            <Calendar size={14} />
+                            Book a Call
+                        </CalendlyButton>
                     </div>
                 </div>
             </div>
