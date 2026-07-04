@@ -75,7 +75,7 @@ export default function Navbar() {
                             Resume
                         </a>
                         <CalendlyButton
-                            className="flex items-center gap-1.5 px-4 py-2 text-xs bg-terracotta-500 text-cream-50 rounded-full font-semibold hover:bg-terracotta-600 transition-all shadow-sm"
+                            className="flex items-center gap-1.5 px-4 py-2 text-xs bg-terracotta-600 text-cream-50 rounded-full font-semibold hover:bg-terracotta-700 transition-all shadow-sm"
                             ariaLabel="Book a call"
                         >
                             <Calendar size={14} />

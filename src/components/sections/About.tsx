@@ -17,7 +17,7 @@ export default function About() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                     <div>
-                        <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-500 mb-3">
+                        <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-700 mb-3">
                             About
                         </p>
                         <h2 id="about-heading" className="text-3xl md:text-4xl font-bold text-ink mb-6 tracking-tight">

@@ -42,7 +42,13 @@ let total = 0;
 
 // axe-core/playwright requires a page created from a browser context.
 async function newPage(width, height) {
-    const context = await browser.newContext({ viewport: { width, height } });
+    // reducedMotion: the site renders scroll reveals fully opaque under
+    // prefers-reduced-motion, so axe scans the settled UI (real colors) instead
+    // of catching a mid-transition frame where blended opacity trips contrast.
+    const context = await browser.newContext({
+        viewport: { width, height },
+        reducedMotion: 'reduce',
+    });
     const page = await context.newPage();
     return { context, page };
 }

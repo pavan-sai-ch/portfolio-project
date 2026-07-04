@@ -10,7 +10,7 @@ export default function Experience() {
             className="py-24 px-4 sm:px-6 lg:px-8 bg-cream-200 border-t border-cream-300"
         >
             <div className="max-w-4xl mx-auto">
-                <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-500 mb-3 text-center">
+                <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-700 mb-3 text-center">
                     Journey
                 </p>
                 <h2 id="experience-heading" className="text-3xl md:text-4xl font-bold text-ink mb-16 text-center tracking-tight">
@@ -29,7 +29,7 @@ export default function Experience() {
 
                                 <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8">
                                     <div className="sm:w-48 flex-shrink-0 pt-1">
-                                        <span className="text-xs font-semibold text-terracotta-600 uppercase tracking-wider bg-terracotta-50 px-2.5 py-1 rounded-full">
+                                        <span className="text-xs font-semibold text-terracotta-700 uppercase tracking-wider bg-terracotta-50 px-2.5 py-1 rounded-full">
                                             {item.period}
                                         </span>
                                     </div>

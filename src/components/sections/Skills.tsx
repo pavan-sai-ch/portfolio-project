@@ -14,7 +14,7 @@ export default function Skills() {
             className="py-24 px-4 sm:px-6 lg:px-8 bg-cream-100 border-t border-cream-300"
         >
             <div className="max-w-6xl mx-auto">
-                <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-500 mb-3">
+                <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-700 mb-3">
                     Toolkit
                 </p>
                 <h2 id="skills-heading" className="text-3xl md:text-4xl font-bold text-ink mb-14 tracking-tight">

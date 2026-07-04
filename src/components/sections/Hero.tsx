@@ -17,7 +17,7 @@ export default function Hero() {
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
                     {/* Left: Name, Title, Links */}
                     <div className="text-center md:text-left flex-1">
-                        <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-500 mb-4">
+                        <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-700 mb-4">
                             Portfolio
                         </p>
 
@@ -30,14 +30,14 @@ export default function Hero() {
 
                         <p className="text-xl md:text-2xl text-ink-muted mb-8 max-w-2xl leading-relaxed">
                             Founding Software Engineer
-                            <span className="text-terracotta-500 font-medium"> · Available for Hire · </span>
+                            <span className="text-terracotta-700 font-medium"> · Available for Hire · </span>
                             Open to Relocate Anywhere in US
                         </p>
 
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                             <CalendlyButton
-                                className="flex items-center gap-2 px-5 py-2.5 bg-terracotta-500 text-cream-50 font-semibold rounded-full hover:bg-terracotta-600 transition-all shadow-sm"
+                                className="flex items-center gap-2 px-5 py-2.5 bg-terracotta-600 text-cream-50 font-semibold rounded-full hover:bg-terracotta-700 transition-all shadow-sm"
                                 ariaLabel="Book a call"
                             >
                                 <Calendar size={18} />

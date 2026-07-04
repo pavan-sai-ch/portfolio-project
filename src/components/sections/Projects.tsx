@@ -12,7 +12,7 @@ export default function Projects() {
         >
             <div className="max-w-6xl mx-auto">
                 <div className="mb-14">
-                    <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-500 mb-3">
+                    <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-700 mb-3">
                         Work
                     </p>
                     <h2 id="projects-heading" className="text-3xl md:text-4xl font-bold text-ink mb-4 tracking-tight">

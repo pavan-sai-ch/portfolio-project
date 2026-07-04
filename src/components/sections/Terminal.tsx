@@ -128,7 +128,7 @@ Resume: ${personalInfo.links.resume}`;
                 <div className="mb-5 flex items-center gap-3">
                     <span className="h-px flex-1 bg-cream-300" />
                     <p className="text-xs font-mono uppercase tracking-[0.2em] text-ink-muted">
-                        Explore via terminal — type <span className="text-terracotta-500">help</span>
+                        Explore via terminal — type <span className="text-terracotta-700">help</span>
                     </p>
                     <span className="h-px flex-1 bg-cream-300" />
                 </div>
