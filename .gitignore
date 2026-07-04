@@ -48,3 +48,6 @@ graphify-out/cost.json
 graphify-out/.graphify_labels.json
 graphify-out/.graphify_python
 graphify-out/.graphify_root
+
+# Local Claude Code worktrees (regenerable, not source)
+.claude/worktrees/
