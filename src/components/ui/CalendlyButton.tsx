@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { PopupModal } from 'react-calendly';
 import { personalInfo } from '@/lib/data';
 
@@ -15,16 +15,19 @@ export default function CalendlyButton({ className, children, ariaLabel, title }
     const [isOpen, setIsOpen] = useState(false);
     const [rootEl, setRootEl] = useState<HTMLElement | null>(null);
 
-    // PopupModal needs a mounted DOM node as its portal root; only available client-side.
-    useEffect(() => {
+    // PopupModal needs a mounted DOM node as its portal root. Resolve it on click
+    // (client-side, document guaranteed) rather than in an effect — the modal is
+    // only needed once opened, and this avoids a setState-in-effect cascade.
+    const handleOpen = () => {
         setRootEl(document.body);
-    }, []);
+        setIsOpen(true);
+    };
 
     return (
         <>
             <button
                 type="button"
-                onClick={() => setIsOpen(true)}
+                onClick={handleOpen}
                 className={className}
                 aria-label={ariaLabel}
                 aria-haspopup="dialog"

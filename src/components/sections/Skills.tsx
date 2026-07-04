@@ -1,4 +1,5 @@
 import { skills } from '@/lib/data';
+import { Stagger, StaggerItem } from '@/components/motion/Reveal';
 import React from "react";
 
 const categoryLabels: Record<string, string> = {
@@ -7,34 +8,40 @@ const categoryLabels: Record<string, string> = {
 
 export default function Skills() {
     return (
-        <section id="skills" aria-labelledby="skills-heading" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50 border-t border-gray-800">
+        <section
+            id="skills"
+            aria-labelledby="skills-heading"
+            className="py-24 px-4 sm:px-6 lg:px-8 bg-cream-100 border-t border-cream-300"
+        >
             <div className="max-w-6xl mx-auto">
-
-                <h2 id="skills-heading" className="text-3xl font-bold text-white mb-12">
+                <p className="text-sm font-mono uppercase tracking-[0.2em] text-terracotta-500 mb-3">
+                    Toolkit
+                </p>
+                <h2 id="skills-heading" className="text-3xl md:text-4xl font-bold text-ink mb-14 tracking-tight">
                     Technical Skills
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
+                <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {Object.entries(skills).map(([category, items]) => (
-                        <div key={category}>
-                            <h3 className="text-lg font-bold text-green-400 mb-4 capitalize font-mono">
-                                $ {categoryLabels[category] ?? category}
-                            </h3>
-                            <ul className="space-y-2">
-                                {items.map((skill) => (
-                                    <li
-                                        key={skill}
-                                        className="px-3 py-2 bg-gray-800 border border-gray-700 rounded text-sm text-gray-300 hover:border-green-500 hover:text-green-400 transition-all cursor-default font-mono"
-                                    >
-                                        <span aria-hidden="true">• </span>{skill}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                        <StaggerItem key={category}>
+                            <div className="bg-cream-50 border border-cream-300 rounded-2xl p-6 h-full">
+                                <h3 className="text-base font-bold text-terracotta-600 mb-4 capitalize">
+                                    {categoryLabels[category] ?? category}
+                                </h3>
+                                <ul className="space-y-2">
+                                    {items.map((skill) => (
+                                        <li
+                                            key={skill}
+                                            className="px-3 py-2 bg-cream-100 border border-cream-300 rounded-lg text-sm text-ink-muted hover:border-terracotta-300 hover:text-terracotta-700 transition-all cursor-default"
+                                        >
+                                            {skill}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </StaggerItem>
                     ))}
-
-                </div>
+                </Stagger>
             </div>
         </section>
     );

@@ -21,10 +21,6 @@ export default function Terminal() {
         }
     }, [lines]);
 
-    // Focus input on mount
-    useEffect(() => {
-        inputRef.current?.focus();
-    }, []);
 
     const executeCommand = (command: string): string => {
         const parts = command.trim().toLowerCase().split(" ");
@@ -127,8 +123,15 @@ Resume: ${personalInfo.links.resume}`;
     };
 
     return (
-        <section id="terminal" aria-label="Interactive command-line portfolio explorer" className="py-8 px-4 sm:px-6 lg:px-8">
+        <section id="terminal" aria-label="Interactive command-line portfolio explorer" onClick={() => inputRef.current?.focus({ preventScroll: true })} className="py-12 px-4 sm:px-6 lg:px-8 bg-cream-100">
             <div className="max-w-4xl mx-auto">
+                <div className="mb-5 flex items-center gap-3">
+                    <span className="h-px flex-1 bg-cream-300" />
+                    <p className="text-xs font-mono uppercase tracking-[0.2em] text-ink-muted">
+                        Explore via terminal — type <span className="text-terracotta-500">help</span>
+                    </p>
+                    <span className="h-px flex-1 bg-cream-300" />
+                </div>
                 <div
                     ref={terminalRef}
                     role="log"
@@ -140,11 +143,11 @@ Resume: ${personalInfo.links.resume}`;
                     {lines.map((line, index) => (
                         <div key={index} className="mb-2">
                             {line.type === "input" ? (
-                                <div className="text-blue-400 font-semibold">
+                                <div className="text-terracotta-300 font-semibold">
                                     {line.content}
                                 </div>
                             ) : (
-                                <div className="text-green-400 whitespace-pre-wrap break-words">
+                                <div className="text-[#EADFCE] whitespace-pre-wrap break-words">
                                     {line.content}
                                 </div>
                             )}
@@ -154,15 +157,15 @@ Resume: ${personalInfo.links.resume}`;
 
                 {/* Input Form */}
                 <form onSubmit={handleSubmit} className="mt-4">
-                    <div className="flex items-center bg-gray-900 border border-gray-700 rounded-lg px-4 py-2">
-                        <span className="text-blue-400 font-semibold mr-2" aria-hidden="true">$</span>
+                    <div className="flex items-center bg-[#201712] border border-terracotta-500/30 rounded-lg px-4 py-2">
+                        <span className="text-terracotta-400 font-semibold mr-2" aria-hidden="true">$</span>
                         <input
                             ref={inputRef}
                             type="text"
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             onKeyDown={handleKeyDown}
-                            className="flex-1 bg-transparent text-green-400 outline-none font-mono terminal-input"
+                            className="flex-1 bg-transparent text-[#EADFCE] outline-none font-mono terminal-input"
                             placeholder="Type command here..."
                             aria-label="Terminal command input. Type help for available commands."
                             autoComplete="off"

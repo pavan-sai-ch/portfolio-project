@@ -1,20 +1,36 @@
 "use client";
 
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { Mail, Github, Linkedin, Calendar } from 'lucide-react';
 import { personalInfo } from '@/lib/data';
 import CalendlyButton from '@/components/ui/CalendlyButton';
 
 export default function Navbar() {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 24);
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
     return (
-        <nav className="fixed top-0 w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
+        <nav
+            className={`fixed top-0 w-full z-50 border-b transition-all duration-300 ${
+                scrolled
+                    ? 'bg-cream-100/90 backdrop-blur-md border-cream-300 shadow-sm'
+                    : 'bg-cream-100/60 backdrop-blur-sm border-transparent'
+            }`}
+        >
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-20">
-                    {/* Left: Name and Title */}
+                <div className={`flex justify-between items-center transition-all duration-300 ${scrolled ? 'h-16' : 'h-20'}`}>
+                    {/* Left: Name */}
                     <div className="flex flex-col">
                         <Link
                             href="#home"
-                            className="font-bold text-2xl text-white hover:text-green-400 transition-colors"
+                            className="font-bold text-2xl text-ink hover:text-terracotta-500 transition-colors tracking-tight"
                         >
                             {personalInfo.name}
                         </Link>
@@ -26,7 +42,7 @@ export default function Navbar() {
                             href={`mailto:${personalInfo.email}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-green-400 transition-colors"
+                            className="text-ink-muted hover:text-terracotta-500 transition-colors"
                             aria-label="Email"
                             title={personalInfo.email}
                         >
@@ -36,7 +52,7 @@ export default function Navbar() {
                             href={personalInfo.links.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-blue-400 transition-colors"
+                            className="text-ink-muted hover:text-terracotta-500 transition-colors"
                             aria-label="LinkedIn"
                         >
                             <Linkedin size={20} />
@@ -45,7 +61,7 @@ export default function Navbar() {
                             href={personalInfo.links.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-gray-200 transition-colors"
+                            className="text-ink-muted hover:text-terracotta-500 transition-colors"
                             aria-label="GitHub"
                         >
                             <Github size={20} />
@@ -54,12 +70,12 @@ export default function Navbar() {
                             href={personalInfo.links.resume}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-3 py-1.5 text-xs font-mono bg-gray-800 text-green-400 border border-green-400/30 rounded hover:bg-green-400 hover:text-gray-900 transition-all"
+                            className="hidden sm:inline-block px-3 py-1.5 text-xs font-semibold text-terracotta-600 border border-terracotta-300 rounded-full hover:bg-terracotta-50 transition-all"
                         >
                             Resume
                         </a>
                         <CalendlyButton
-                            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono bg-green-400 text-gray-900 rounded font-semibold hover:bg-green-300 transition-all"
+                            className="flex items-center gap-1.5 px-4 py-2 text-xs bg-terracotta-500 text-cream-50 rounded-full font-semibold hover:bg-terracotta-600 transition-all shadow-sm"
                             ariaLabel="Book a call"
                         >
                             <Calendar size={14} />
