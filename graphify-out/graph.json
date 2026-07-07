@@ -68,7 +68,7 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "id": "postcss_config_mjs",
-      "community": 10,
+      "community": 15,
       "norm_label": "postcss.config.mjs"
     },
     {
@@ -77,7 +77,7 @@
       "source_file": "next-env.d.ts",
       "source_location": "L1",
       "id": "next_env_d_ts",
-      "community": 11,
+      "community": 16,
       "norm_label": "next-env.d.ts"
     },
     {
@@ -86,7 +86,7 @@
       "source_file": "tailwind.config.ts",
       "source_location": "L1",
       "id": "tailwind_config_ts",
-      "community": 12,
+      "community": 17,
       "norm_label": "tailwind.config.ts"
     },
     {
@@ -95,7 +95,7 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L1",
       "id": "eslint_config_mjs",
-      "community": 13,
+      "community": 18,
       "norm_label": "eslint.config.mjs"
     },
     {
@@ -104,7 +104,7 @@
       "source_file": "next.config.ts",
       "source_location": "L1",
       "id": "next_config_ts",
-      "community": 14,
+      "community": 19,
       "norm_label": "next.config.ts"
     },
     {
@@ -113,7 +113,7 @@
       "source_file": "scripts/a11y.mjs",
       "source_location": "L1",
       "id": "scripts_a11y_mjs",
-      "community": 6,
+      "community": 9,
       "norm_label": "a11y.mjs"
     },
     {
@@ -122,7 +122,7 @@
       "source_file": "scripts/a11y.mjs",
       "source_location": "L15",
       "id": "scripts_a11y_report",
-      "community": 6,
+      "community": 9,
       "norm_label": "report()"
     },
     {
@@ -131,7 +131,7 @@
       "source_file": "scripts/a11y.mjs",
       "source_location": "L32",
       "id": "scripts_a11y_scan",
-      "community": 6,
+      "community": 9,
       "norm_label": "scan()"
     },
     {
@@ -140,7 +140,7 @@
       "source_file": "scripts/a11y.mjs",
       "source_location": "L44",
       "id": "scripts_a11y_newpage",
-      "community": 6,
+      "community": 9,
       "norm_label": "newpage()"
     },
     {
@@ -149,7 +149,7 @@
       "source_file": "src/types/index.ts",
       "source_location": "L1",
       "id": "src_types_index_ts",
-      "community": 2,
+      "community": 6,
       "norm_label": "index.ts"
     },
     {
@@ -158,7 +158,7 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L1",
       "id": "src_app_layout_tsx",
-      "community": 8,
+      "community": 12,
       "norm_label": "layout.tsx"
     },
     {
@@ -167,7 +167,7 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L13",
       "id": "app_layout_rootlayout",
-      "community": 8,
+      "community": 12,
       "norm_label": "rootlayout()"
     },
     {
@@ -176,17 +176,35 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L1",
       "id": "src_app_page_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "page.tsx"
     },
     {
       "label": "Home()",
       "file_type": "code",
       "source_file": "src/app/page.tsx",
-      "source_location": "L12",
+      "source_location": "L15",
       "id": "app_page_home",
-      "community": 1,
+      "community": 0,
       "norm_label": "home()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "src/app/api/geo/route.ts",
+      "source_location": "L1",
+      "id": "src_app_api_geo_route_ts",
+      "community": 13,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/app/api/geo/route.ts",
+      "source_location": "L7",
+      "id": "geo_route_get",
+      "community": 13,
+      "norm_label": "get()"
     },
     {
       "label": "CalendlyButton.tsx",
@@ -194,7 +212,7 @@
       "source_file": "src/components/ui/CalendlyButton.tsx",
       "source_location": "L1",
       "id": "src_components_ui_calendlybutton_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "calendlybutton.tsx"
     },
     {
@@ -203,7 +221,7 @@
       "source_file": "src/components/ui/CalendlyButton.tsx",
       "source_location": "L14",
       "id": "ui_calendlybutton_calendlybutton",
-      "community": 1,
+      "community": 0,
       "norm_label": "calendlybutton()"
     },
     {
@@ -212,7 +230,7 @@
       "source_file": "src/components/ui/ProjectCard.tsx",
       "source_location": "L1",
       "id": "src_components_ui_projectcard_tsx",
-      "community": 2,
+      "community": 5,
       "norm_label": "projectcard.tsx"
     },
     {
@@ -221,7 +239,7 @@
       "source_file": "src/components/ui/SocialIcons.tsx",
       "source_location": "L1",
       "id": "src_components_ui_socialicons_tsx",
-      "community": 2,
+      "community": 5,
       "norm_label": "socialicons.tsx"
     },
     {
@@ -230,7 +248,7 @@
       "source_file": "src/components/ui/SocialIcons.tsx",
       "source_location": "L8",
       "id": "ui_socialicons_githubicon",
-      "community": 2,
+      "community": 5,
       "norm_label": "githubicon()"
     },
     {
@@ -239,7 +257,7 @@
       "source_file": "src/components/ui/FadeIn.tsx",
       "source_location": "L1",
       "id": "src_components_ui_fadein_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "fadein.tsx"
     },
     {
@@ -248,7 +266,7 @@
       "source_file": "src/components/ui/FadeIn.tsx",
       "source_location": "L6",
       "id": "ui_fadein_fadein",
-      "community": 1,
+      "community": 0,
       "norm_label": "fadein()"
     },
     {
@@ -257,7 +275,7 @@
       "source_file": "src/components/sections/Projects.tsx",
       "source_location": "L1",
       "id": "src_components_sections_projects_tsx",
-      "community": 2,
+      "community": 0,
       "norm_label": "projects.tsx"
     },
     {
@@ -266,7 +284,7 @@
       "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L1",
       "id": "src_components_sections_hero_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "hero.tsx"
     },
     {
@@ -275,7 +293,7 @@
       "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L6",
       "id": "sections_hero_hero",
-      "community": 1,
+      "community": 0,
       "norm_label": "hero()"
     },
     {
@@ -284,7 +302,7 @@
       "source_file": "src/components/sections/Experience.tsx",
       "source_location": "L1",
       "id": "src_components_sections_experience_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "experience.tsx"
     },
     {
@@ -293,34 +311,34 @@
       "source_file": "src/components/sections/Terminal.tsx",
       "source_location": "L1",
       "id": "src_components_sections_terminal_tsx",
-      "community": 7,
+      "community": 6,
       "norm_label": "terminal.tsx"
     },
     {
       "label": "executeCommand()",
       "file_type": "code",
       "source_file": "src/components/sections/Terminal.tsx",
-      "source_location": "L29",
+      "source_location": "L25",
       "id": "sections_terminal_executecommand",
-      "community": 7,
+      "community": 6,
       "norm_label": "executecommand()"
     },
     {
       "label": "handleSubmit()",
       "file_type": "code",
       "source_file": "src/components/sections/Terminal.tsx",
-      "source_location": "L85",
+      "source_location": "L81",
       "id": "sections_terminal_handlesubmit",
-      "community": 7,
+      "community": 6,
       "norm_label": "handlesubmit()"
     },
     {
       "label": "handleKeyDown()",
       "file_type": "code",
       "source_file": "src/components/sections/Terminal.tsx",
-      "source_location": "L111",
+      "source_location": "L107",
       "id": "sections_terminal_handlekeydown",
-      "community": 7,
+      "community": 6,
       "norm_label": "handlekeydown()"
     },
     {
@@ -329,17 +347,8 @@
       "source_file": "src/components/sections/Skills.tsx",
       "source_location": "L1",
       "id": "src_components_sections_skills_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "skills.tsx"
-    },
-    {
-      "label": "Skills()",
-      "file_type": "code",
-      "source_file": "src/components/sections/Skills.tsx",
-      "source_location": "L8",
-      "id": "sections_skills_skills",
-      "community": 1,
-      "norm_label": "skills()"
     },
     {
       "label": "About.tsx",
@@ -347,7 +356,7 @@
       "source_file": "src/components/sections/About.tsx",
       "source_location": "L1",
       "id": "src_components_sections_about_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "about.tsx"
     },
     {
@@ -356,17 +365,35 @@
       "source_file": "src/components/layout/Navbar.tsx",
       "source_location": "L1",
       "id": "src_components_layout_navbar_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "navbar.tsx"
     },
     {
       "label": "Navbar()",
       "file_type": "code",
       "source_file": "src/components/layout/Navbar.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "id": "layout_navbar_navbar",
-      "community": 1,
+      "community": 0,
       "norm_label": "navbar()"
+    },
+    {
+      "label": "GeoTracker.tsx",
+      "file_type": "code",
+      "source_file": "src/components/layout/GeoTracker.tsx",
+      "source_location": "L1",
+      "id": "src_components_layout_geotracker_tsx",
+      "community": 0,
+      "norm_label": "geotracker.tsx"
+    },
+    {
+      "label": "GeoTracker()",
+      "file_type": "code",
+      "source_file": "src/components/layout/GeoTracker.tsx",
+      "source_location": "L12",
+      "id": "layout_geotracker_geotracker",
+      "community": 0,
+      "norm_label": "geotracker()"
     },
     {
       "label": "Footer.tsx",
@@ -374,7 +401,7 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L1",
       "id": "src_components_layout_footer_tsx",
-      "community": 2,
+      "community": 5,
       "norm_label": "footer.tsx"
     },
     {
@@ -383,8 +410,80 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L6",
       "id": "layout_footer_footer",
-      "community": 2,
+      "community": 5,
       "norm_label": "footer()"
+    },
+    {
+      "label": "SectionRail.tsx",
+      "file_type": "code",
+      "source_file": "src/components/layout/SectionRail.tsx",
+      "source_location": "L1",
+      "id": "src_components_layout_sectionrail_tsx",
+      "community": 1,
+      "norm_label": "sectionrail.tsx"
+    },
+    {
+      "label": "absTop()",
+      "file_type": "code",
+      "source_file": "src/components/layout/SectionRail.tsx",
+      "source_location": "L50",
+      "id": "layout_sectionrail_abstop",
+      "community": 1,
+      "norm_label": "abstop()"
+    },
+    {
+      "label": "compute()",
+      "file_type": "code",
+      "source_file": "src/components/layout/SectionRail.tsx",
+      "source_location": "L63",
+      "id": "layout_sectionrail_compute",
+      "community": 1,
+      "norm_label": "compute()"
+    },
+    {
+      "label": "handleClick()",
+      "file_type": "code",
+      "source_file": "src/components/layout/SectionRail.tsx",
+      "source_location": "L89",
+      "id": "layout_sectionrail_handleclick",
+      "community": 1,
+      "norm_label": "handleclick()"
+    },
+    {
+      "label": "SmoothScroll.tsx",
+      "file_type": "code",
+      "source_file": "src/components/layout/SmoothScroll.tsx",
+      "source_location": "L1",
+      "id": "src_components_layout_smoothscroll_tsx",
+      "community": 1,
+      "norm_label": "smoothscroll.tsx"
+    },
+    {
+      "label": "SmoothScroll()",
+      "file_type": "code",
+      "source_file": "src/components/layout/SmoothScroll.tsx",
+      "source_location": "L25",
+      "id": "layout_smoothscroll_smoothscroll",
+      "community": 1,
+      "norm_label": "smoothscroll()"
+    },
+    {
+      "label": "scrollEngine.ts",
+      "file_type": "code",
+      "source_file": "src/components/layout/scrollEngine.ts",
+      "source_location": "L1",
+      "id": "src_components_layout_scrollengine_ts",
+      "community": 1,
+      "norm_label": "scrollengine.ts"
+    },
+    {
+      "label": "Reveal.tsx",
+      "file_type": "code",
+      "source_file": "src/components/motion/Reveal.tsx",
+      "source_location": "L1",
+      "id": "src_components_motion_reveal_tsx",
+      "community": 0,
+      "norm_label": "reveal.tsx"
     },
     {
       "label": "data.ts",
@@ -392,7 +491,7 @@
       "source_file": "src/lib/data.ts",
       "source_location": "L1",
       "id": "src_lib_data_ts",
-      "community": 1,
+      "community": 0,
       "norm_label": "data.ts"
     },
     {
@@ -401,7 +500,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 4,
+      "community": 7,
       "norm_label": "readme.md"
     },
     {
@@ -410,7 +509,7 @@
       "source_file": "README.md",
       "source_location": "L3",
       "id": "portfolio_project_readme_getting_started",
-      "community": 4,
+      "community": 7,
       "norm_label": "getting started"
     },
     {
@@ -419,7 +518,7 @@
       "source_file": "README.md",
       "source_location": "L7",
       "id": "portfolio_project_readme_codeblock_1",
-      "community": 4,
+      "community": 7,
       "norm_label": "code:bash (npm run dev)"
     },
     {
@@ -428,7 +527,7 @@
       "source_file": "README.md",
       "source_location": "L23",
       "id": "portfolio_project_readme_learn_more",
-      "community": 4,
+      "community": 7,
       "norm_label": "learn more"
     },
     {
@@ -437,7 +536,7 @@
       "source_file": "README.md",
       "source_location": "L32",
       "id": "portfolio_project_readme_deploy_on_vercel",
-      "community": 4,
+      "community": 7,
       "norm_label": "deploy on vercel"
     },
     {
@@ -446,7 +545,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "claude_md",
-      "community": 9,
+      "community": 14,
       "norm_label": "claude.md"
     },
     {
@@ -455,15 +554,24 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "portfolio_project_claude_graphify",
-      "community": 9,
+      "community": 14,
       "norm_label": "graphify"
+    },
+    {
+      "label": "Skills()",
+      "file_type": "code",
+      "source_file": "src/components/sections/Skills.tsx",
+      "source_location": "L8",
+      "community": 0,
+      "norm_label": "skills()",
+      "id": "sections_skills_skills"
     },
     {
       "label": "About()",
       "file_type": "code",
       "source_file": "src/components/sections/About.tsx",
       "source_location": "L3",
-      "community": 1,
+      "community": 0,
       "norm_label": "about()",
       "id": "sections_about_about"
     },
@@ -476,7 +584,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "postcss.config",
       "id": "postcss_config"
     },
@@ -489,7 +597,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "tailwind.config",
       "id": "tailwind_config"
     },
@@ -502,7 +610,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 20,
       "norm_label": "eslint.config",
       "id": "eslint_config"
     },
@@ -515,7 +623,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "next.config",
       "id": "next_config"
     },
@@ -528,7 +636,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "project interface",
       "id": "types_project"
     },
@@ -541,7 +649,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 11,
       "norm_label": "experience interface",
       "id": "types_experience"
     },
@@ -554,7 +662,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "terminalline interface",
       "id": "types_terminalline"
     },
@@ -567,7 +675,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 21,
       "norm_label": "clicommand interface",
       "id": "types_clicommand"
     },
@@ -580,7 +688,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 10,
       "norm_label": "personalinfo",
       "id": "data_personalinfo"
     },
@@ -593,7 +701,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "skills",
       "id": "data_skills"
     },
@@ -606,7 +714,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 11,
       "norm_label": "experience",
       "id": "data_experience"
     },
@@ -619,7 +727,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "projects",
       "id": "data_projects"
     },
@@ -632,7 +740,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "cliconfig",
       "id": "data_cliconfig"
     },
@@ -645,7 +753,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "globals.css",
       "id": "globals_css"
     },
@@ -658,7 +766,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "rootlayout",
       "id": "layout_rootlayout"
     },
@@ -671,7 +779,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "home page",
       "id": "page_home"
     },
@@ -684,7 +792,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "footer",
       "id": "footer_footer"
     },
@@ -697,7 +805,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 10,
       "norm_label": "navbar",
       "id": "navbar_navbar"
     },
@@ -710,7 +818,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "about",
       "id": "about_about"
     },
@@ -723,7 +831,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 11,
       "norm_label": "experience section",
       "id": "experience_experience"
     },
@@ -736,7 +844,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 10,
       "norm_label": "hero",
       "id": "hero_hero"
     },
@@ -749,7 +857,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "projects section",
       "id": "projects_projects"
     },
@@ -762,7 +870,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "skills section",
       "id": "skills_skills"
     },
@@ -775,7 +883,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "terminal",
       "id": "terminal_terminal"
     },
@@ -788,7 +896,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "fadein",
       "id": "fadein_fadein"
     },
@@ -801,7 +909,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "projectcard",
       "id": "projectcard_projectcard"
     },
@@ -814,7 +922,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "githubicon",
       "id": "socialicons_githubicon"
     },
@@ -827,7 +935,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "linkedinicon",
       "id": "socialicons_linkedinicon"
     },
@@ -840,7 +948,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "portfolio readme",
       "id": "readme_portfolio"
     },
@@ -854,7 +962,7 @@
       "author": null,
       "contributor": null,
       "rationale": "An interactive CLI terminal is used as the hero interaction pattern, allowing users to explore portfolio content via typed commands \u2014 a distinctive developer-persona design choice.",
-      "community": 0,
+      "community": 2,
       "norm_label": "terminal cli ui pattern",
       "id": "design_terminalui"
     },
@@ -868,7 +976,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Sections use a reusable FadeIn wrapper (framer-motion whileInView) for progressive disclosure \u2014 keeps each section component unaware of scroll animation logic.",
-      "community": 0,
+      "community": 3,
       "norm_label": "fadein scroll animation pattern",
       "id": "design_fadein_animation"
     },
@@ -882,7 +990,7 @@
       "author": null,
       "contributor": null,
       "rationale": "All portfolio content (personalInfo, skills, experience, projects, cliConfig) is centralized in a single data file rather than scattered across components, enabling single-source-of-truth updates.",
-      "community": 0,
+      "community": 10,
       "norm_label": "centralized data layer in lib/data.ts",
       "id": "design_centralized_data"
     }
@@ -894,9 +1002,9 @@
       "source_file": "scripts/a11y.mjs",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_a11y_mjs",
-      "target": "scripts_a11y_report",
-      "confidence_score": 1.0
+      "target": "scripts_a11y_report"
     },
     {
       "relation": "contains",
@@ -904,9 +1012,9 @@
       "source_file": "scripts/a11y.mjs",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_a11y_mjs",
-      "target": "scripts_a11y_scan",
-      "confidence_score": 1.0
+      "target": "scripts_a11y_scan"
     },
     {
       "relation": "contains",
@@ -914,9 +1022,9 @@
       "source_file": "scripts/a11y.mjs",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_a11y_mjs",
-      "target": "scripts_a11y_newpage",
-      "confidence_score": 1.0
+      "target": "scripts_a11y_newpage"
     },
     {
       "relation": "calls",
@@ -925,9 +1033,9 @@
       "source_file": "scripts/a11y.mjs",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_a11y_scan",
-      "target": "scripts_a11y_report",
-      "confidence_score": 1.0
+      "target": "scripts_a11y_report"
     },
     {
       "relation": "imports_from",
@@ -971,6 +1079,39 @@
       "confidence_score": 1.0,
       "source": "src_app_page_tsx",
       "target": "src_components_layout_navbar_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_layout_sectionrail_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_layout_smoothscroll_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_layout_geotracker_tsx"
     },
     {
       "relation": "imports_from",
@@ -1054,11 +1195,11 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app/page.tsx",
-      "source_location": "L9",
+      "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "src_components_ui_fadein_tsx"
+      "target": "src_components_motion_reveal_tsx"
     },
     {
       "relation": "contains",
@@ -1069,6 +1210,27 @@
       "confidence_score": 1.0,
       "source": "src_app_page_tsx",
       "target": "app_page_home"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_ui_fadein_tsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/geo/route.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_api_geo_route_ts",
+      "target": "geo_route_get"
     },
     {
       "relation": "imports_from",
@@ -1214,6 +1376,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Projects.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_projects_tsx",
+      "target": "src_components_motion_reveal_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L3",
       "weight": 1.0,
@@ -1241,6 +1414,17 @@
       "confidence_score": 1.0,
       "source": "src_components_sections_experience_tsx",
       "target": "src_lib_data_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Experience.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_experience_tsx",
+      "target": "src_components_motion_reveal_tsx"
     },
     {
       "relation": "imports_from",
@@ -1306,6 +1490,17 @@
       "target": "src_lib_data_ts"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Skills.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sections_skills_tsx",
+      "target": "src_components_motion_reveal_tsx"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/sections/Skills.tsx",
@@ -1358,6 +1553,16 @@
       "target": "layout_navbar_navbar"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/GeoTracker.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_geotracker_tsx",
+      "target": "layout_geotracker_geotracker"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1377,6 +1582,68 @@
       "confidence_score": 1.0,
       "source": "src_components_layout_footer_tsx",
       "target": "layout_footer_footer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/SectionRail.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_sectionrail_tsx",
+      "target": "src_components_layout_scrollengine_ts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/SectionRail.tsx",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_sectionrail_tsx",
+      "target": "layout_sectionrail_abstop"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/SectionRail.tsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_sectionrail_tsx",
+      "target": "layout_sectionrail_compute"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/SectionRail.tsx",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_sectionrail_tsx",
+      "target": "layout_sectionrail_handleclick"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/SmoothScroll.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_smoothscroll_tsx",
+      "target": "src_components_layout_scrollengine_ts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/SmoothScroll.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_smoothscroll_tsx",
+      "target": "layout_smoothscroll_smoothscroll"
     },
     {
       "relation": "contains",
@@ -1867,5 +2134,5 @@
       "source_file": "src/app/page.tsx"
     }
   ],
-  "built_at_commit": "e5a911c65b49c455fae4807f625f92c7b5afa163"
+  "built_at_commit": "b46f728829c9e13498f1b9ebfa77c2d82efe7274"
 }
