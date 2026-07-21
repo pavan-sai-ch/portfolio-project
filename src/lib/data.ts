@@ -91,9 +91,10 @@ export const experience = [
         role: "Software Engineer",
         period: "Sep 2022 - Nov 2023",
         description: [
-            "Built 60+ modular UI components to enhance frontend scalability; applied memoization across 30+ components achieving 80% faster TAT; used lazy async loading to achieve 70% faster UI responsiveness.",
-            "Integrated 150+ RESTful APIs for real-time mobile/backend synchronization; published 16 production releases to App Store and Play Store.",
-            "Integrated Google OAuth and leveraged Firebase to create 35+ dynamic deep-linked (Redux) navigation flows; managed CI/CD via GitHub Actions in a strict Git-flow environment.",
+            "Built React Native mobile apps serving 30M+ active users annually across telemedicine, learning, and booking platforms; published 16 production releases to App Store and Play Store.",
+            "Shipped Personal Health ID: patients enter a single identifier and authorized doctors retrieve full patient history, powering 150K+ teleconsultations annually for rural and underserved communities.",
+            "Built 60+ modular React/TypeScript components and integrated 150+ REST APIs; implemented 35+ Firebase deep-linked Redux navigation flows with GitHub Actions CI/CD.",
+            "Achieved 80% faster TAT via memoization and 70% faster UI via lazy async loading; scaled SFU-based WebRTC video from 200 to 5,000+ concurrent users.",
         ],
     },
     {
