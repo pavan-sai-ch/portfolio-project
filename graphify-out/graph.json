@@ -149,7 +149,7 @@
       "source_file": "src/types/index.ts",
       "source_location": "L1",
       "id": "src_types_index_ts",
-      "community": 6,
+      "community": 4,
       "norm_label": "index.ts"
     },
     {
@@ -230,7 +230,7 @@
       "source_file": "src/components/ui/ProjectCard.tsx",
       "source_location": "L1",
       "id": "src_components_ui_projectcard_tsx",
-      "community": 5,
+      "community": 3,
       "norm_label": "projectcard.tsx"
     },
     {
@@ -239,7 +239,7 @@
       "source_file": "src/components/ui/SocialIcons.tsx",
       "source_location": "L1",
       "id": "src_components_ui_socialicons_tsx",
-      "community": 5,
+      "community": 3,
       "norm_label": "socialicons.tsx"
     },
     {
@@ -248,7 +248,7 @@
       "source_file": "src/components/ui/SocialIcons.tsx",
       "source_location": "L8",
       "id": "ui_socialicons_githubicon",
-      "community": 5,
+      "community": 3,
       "norm_label": "githubicon()"
     },
     {
@@ -311,7 +311,7 @@
       "source_file": "src/components/sections/Terminal.tsx",
       "source_location": "L1",
       "id": "src_components_sections_terminal_tsx",
-      "community": 6,
+      "community": 4,
       "norm_label": "terminal.tsx"
     },
     {
@@ -320,7 +320,7 @@
       "source_file": "src/components/sections/Terminal.tsx",
       "source_location": "L25",
       "id": "sections_terminal_executecommand",
-      "community": 6,
+      "community": 4,
       "norm_label": "executecommand()"
     },
     {
@@ -329,7 +329,7 @@
       "source_file": "src/components/sections/Terminal.tsx",
       "source_location": "L81",
       "id": "sections_terminal_handlesubmit",
-      "community": 6,
+      "community": 4,
       "norm_label": "handlesubmit()"
     },
     {
@@ -338,7 +338,7 @@
       "source_file": "src/components/sections/Terminal.tsx",
       "source_location": "L107",
       "id": "sections_terminal_handlekeydown",
-      "community": 6,
+      "community": 4,
       "norm_label": "handlekeydown()"
     },
     {
@@ -401,7 +401,7 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L1",
       "id": "src_components_layout_footer_tsx",
-      "community": 5,
+      "community": 3,
       "norm_label": "footer.tsx"
     },
     {
@@ -410,7 +410,7 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L6",
       "id": "layout_footer_footer",
-      "community": 5,
+      "community": 3,
       "norm_label": "footer()"
     },
     {
@@ -419,7 +419,7 @@
       "source_file": "src/components/layout/SectionRail.tsx",
       "source_location": "L1",
       "id": "src_components_layout_sectionrail_tsx",
-      "community": 1,
+      "community": 2,
       "norm_label": "sectionrail.tsx"
     },
     {
@@ -428,7 +428,7 @@
       "source_file": "src/components/layout/SectionRail.tsx",
       "source_location": "L50",
       "id": "layout_sectionrail_abstop",
-      "community": 1,
+      "community": 2,
       "norm_label": "abstop()"
     },
     {
@@ -437,7 +437,7 @@
       "source_file": "src/components/layout/SectionRail.tsx",
       "source_location": "L63",
       "id": "layout_sectionrail_compute",
-      "community": 1,
+      "community": 2,
       "norm_label": "compute()"
     },
     {
@@ -446,7 +446,7 @@
       "source_file": "src/components/layout/SectionRail.tsx",
       "source_location": "L89",
       "id": "layout_sectionrail_handleclick",
-      "community": 1,
+      "community": 2,
       "norm_label": "handleclick()"
     },
     {
@@ -455,7 +455,7 @@
       "source_file": "src/components/layout/SmoothScroll.tsx",
       "source_location": "L1",
       "id": "src_components_layout_smoothscroll_tsx",
-      "community": 1,
+      "community": 2,
       "norm_label": "smoothscroll.tsx"
     },
     {
@@ -464,7 +464,7 @@
       "source_file": "src/components/layout/SmoothScroll.tsx",
       "source_location": "L25",
       "id": "layout_smoothscroll_smoothscroll",
-      "community": 1,
+      "community": 2,
       "norm_label": "smoothscroll()"
     },
     {
@@ -473,7 +473,7 @@
       "source_file": "src/components/layout/scrollEngine.ts",
       "source_location": "L1",
       "id": "src_components_layout_scrollengine_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "scrollengine.ts"
     },
     {
@@ -500,7 +500,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 7,
+      "community": 5,
       "norm_label": "readme.md"
     },
     {
@@ -509,7 +509,7 @@
       "source_file": "README.md",
       "source_location": "L3",
       "id": "portfolio_project_readme_getting_started",
-      "community": 7,
+      "community": 5,
       "norm_label": "getting started"
     },
     {
@@ -518,7 +518,7 @@
       "source_file": "README.md",
       "source_location": "L7",
       "id": "portfolio_project_readme_codeblock_1",
-      "community": 7,
+      "community": 5,
       "norm_label": "code:bash (npm run dev)"
     },
     {
@@ -527,7 +527,7 @@
       "source_file": "README.md",
       "source_location": "L23",
       "id": "portfolio_project_readme_learn_more",
-      "community": 7,
+      "community": 5,
       "norm_label": "learn more"
     },
     {
@@ -536,7 +536,7 @@
       "source_file": "README.md",
       "source_location": "L32",
       "id": "portfolio_project_readme_deploy_on_vercel",
-      "community": 7,
+      "community": 5,
       "norm_label": "deploy on vercel"
     },
     {
@@ -584,7 +584,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 6,
       "norm_label": "postcss.config",
       "id": "postcss_config"
     },
@@ -597,7 +597,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 6,
       "norm_label": "tailwind.config",
       "id": "tailwind_config"
     },
@@ -623,7 +623,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 6,
       "norm_label": "next.config",
       "id": "next_config"
     },
@@ -636,7 +636,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 7,
       "norm_label": "project interface",
       "id": "types_project"
     },
@@ -662,7 +662,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "terminalline interface",
       "id": "types_terminalline"
     },
@@ -701,7 +701,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "skills",
       "id": "data_skills"
     },
@@ -727,7 +727,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "projects",
       "id": "data_projects"
     },
@@ -740,7 +740,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "cliconfig",
       "id": "data_cliconfig"
     },
@@ -753,7 +753,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 6,
       "norm_label": "globals.css",
       "id": "globals_css"
     },
@@ -766,7 +766,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 6,
       "norm_label": "rootlayout",
       "id": "layout_rootlayout"
     },
@@ -779,7 +779,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 8,
       "norm_label": "home page",
       "id": "page_home"
     },
@@ -792,7 +792,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 7,
       "norm_label": "footer",
       "id": "footer_footer"
     },
@@ -818,7 +818,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 8,
       "norm_label": "about",
       "id": "about_about"
     },
@@ -857,7 +857,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 1,
       "norm_label": "projects section",
       "id": "projects_projects"
     },
@@ -870,7 +870,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 1,
       "norm_label": "skills section",
       "id": "skills_skills"
     },
@@ -883,7 +883,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "terminal",
       "id": "terminal_terminal"
     },
@@ -896,7 +896,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 8,
       "norm_label": "fadein",
       "id": "fadein_fadein"
     },
@@ -909,7 +909,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 7,
       "norm_label": "projectcard",
       "id": "projectcard_projectcard"
     },
@@ -922,7 +922,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 7,
       "norm_label": "githubicon",
       "id": "socialicons_githubicon"
     },
@@ -935,7 +935,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 7,
       "norm_label": "linkedinicon",
       "id": "socialicons_linkedinicon"
     },
@@ -948,7 +948,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 8,
       "norm_label": "portfolio readme",
       "id": "readme_portfolio"
     },
@@ -962,7 +962,7 @@
       "author": null,
       "contributor": null,
       "rationale": "An interactive CLI terminal is used as the hero interaction pattern, allowing users to explore portfolio content via typed commands \u2014 a distinctive developer-persona design choice.",
-      "community": 2,
+      "community": 1,
       "norm_label": "terminal cli ui pattern",
       "id": "design_terminalui"
     },
@@ -976,7 +976,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Sections use a reusable FadeIn wrapper (framer-motion whileInView) for progressive disclosure \u2014 keeps each section component unaware of scroll animation logic.",
-      "community": 3,
+      "community": 8,
       "norm_label": "fadein scroll animation pattern",
       "id": "design_fadein_animation"
     },
@@ -2134,5 +2134,5 @@
       "source_file": "src/app/page.tsx"
     }
   ],
-  "built_at_commit": "b46f728829c9e13498f1b9ebfa77c2d82efe7274"
+  "built_at_commit": "35b6f350c27a0f36156231969839e9366419d826"
 }

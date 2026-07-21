@@ -1,7 +1,7 @@
-# Graph Report - portfolio-project  (2026-07-03)
+# Graph Report - portfolio-project  (2026-07-21)
 
 ## Corpus Check
-- 30 files · ~13,641 words
+- 30 files · ~13,865 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,12 +10,12 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b46f7288`
+- Built from commit: `35b6f350`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Centralized Data Layer|Centralized Data Layer]]
+- [[_COMMUNITY_Animation & Experience|Animation & Experience]]
 - [[_COMMUNITY_UI Components & Icons|UI Components & Icons]]
 - [[_COMMUNITY_File References & UI|File References & UI]]
 - [[_COMMUNITY_Build & Style Config|Build & Style Config]]
@@ -60,25 +60,25 @@
 
 ## Communities (22 total, 6 thin omitted)
 
-### Community 2 - "Centralized Data Layer"
-Cohesion: 0.47
-Nodes (6): cliConfig, projects, skills, Terminal CLI UI pattern, Terminal, TerminalLine interface
+### Community 1 - "Animation & Experience"
+Cohesion: 0.32
+Nodes (8): cliConfig, projects, skills, Terminal CLI UI pattern, Projects section, Skills section, Terminal, TerminalLine interface
 
-### Community 3 - "UI Components & Icons"
-Cohesion: 0.33
-Nodes (6): About, FadeIn scroll animation pattern, FadeIn, Home page, Portfolio README, Skills section
-
-### Community 4 - "File References & UI"
-Cohesion: 0.33
-Nodes (6): Footer, ProjectCard, Projects section, GithubIcon, LinkedinIcon, Project interface
-
-### Community 7 - "Root App Layout"
+### Community 5 - "Build & Style Config"
 Cohesion: 0.4
 Nodes (4): code:bash (npm run dev), Deploy on Vercel, Getting Started, Learn More
 
-### Community 8 - "PostCSS Config"
+### Community 6 - "Terminal CLI Interface"
 Cohesion: 0.4
 Nodes (4): RootLayout, next.config, postcss.config, tailwind.config
+
+### Community 7 - "Root App Layout"
+Cohesion: 0.4
+Nodes (5): Footer, ProjectCard, GithubIcon, LinkedinIcon, Project interface
+
+### Community 8 - "PostCSS Config"
+Cohesion: 0.4
+Nodes (5): About, FadeIn scroll animation pattern, FadeIn, Home page, Portfolio README
 
 ### Community 10 - "Tailwind Config"
 Cohesion: 0.5
@@ -96,11 +96,11 @@ Nodes (3): experience, Experience section, Experience interface
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Home page` connect `UI Components & Icons` to `ESLint Config`, `Tailwind Config`, `Centralized Data Layer`, `File References & UI`?**
+- **Why does `Home page` connect `PostCSS Config` to `Animation & Experience`, `Tailwind Config`, `ESLint Config`, `Root App Layout`?**
   _High betweenness centrality (0.042) - this node is a cross-community bridge._
-- **Why does `Terminal` connect `Centralized Data Layer` to `UI Components & Icons`, `Tailwind Config`, `ESLint Config`?**
+- **Why does `Terminal` connect `Animation & Experience` to `PostCSS Config`, `Tailwind Config`, `ESLint Config`?**
   _High betweenness centrality (0.023) - this node is a cross-community bridge._
-- **Why does `Footer` connect `File References & UI` to `Tailwind Config`, `UI Components & Icons`?**
+- **Why does `Footer` connect `Root App Layout` to `PostCSS Config`, `Tailwind Config`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `code:bash (npm run dev)`, `Learn More`, `Deploy on Vercel` to the rest of the system?**
   _17 weakly-connected nodes found - possible documentation gaps or missing edges._
