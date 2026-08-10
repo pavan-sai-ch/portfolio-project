@@ -3,10 +3,12 @@ import Reveal, { Stagger, StaggerItem } from "@/components/motion/Reveal";
 import {
     briefMeta,
     stats,
+    roleFit,
     fitMap,
     controlLayer,
     outsideRead,
     ninetyDays,
+    workingStyle,
     leadership,
     closing,
 } from "@/lib/runnsmart";
@@ -108,8 +110,32 @@ export default function Brief() {
                 </Stagger>
             </Band>
 
+            {/* ── Where I fit ────────────────────────────────────────── */}
+            <Band id="role-fit" labelledBy="role-fit-heading">
+                <Reveal>
+                    <Eyebrow>The role</Eyebrow>
+                    <Heading id="role-fit-heading">{roleFit.heading}</Heading>
+                    <p className="text-ink-muted leading-relaxed">{roleFit.lead}</p>
+                </Reveal>
+
+                <Stagger className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    {roleFit.roles.map((role) => (
+                        <StaggerItem key={role.title}>
+                            <div className="h-full bg-cream-50 border border-cream-300 rounded-lg p-6">
+                                <h3 className="text-lg font-bold text-ink mb-2">
+                                    {role.title}
+                                </h3>
+                                <p className="text-ink-muted leading-relaxed">
+                                    {role.body}
+                                </p>
+                            </div>
+                        </StaggerItem>
+                    ))}
+                </Stagger>
+            </Band>
+
             {/* ── Fit map ────────────────────────────────────────────── */}
-            <Band id="fit" labelledBy="fit-heading">
+            <Band id="fit" labelledBy="fit-heading" tone="alt">
                 <Reveal>
                     <Eyebrow>The short version</Eyebrow>
                     <Heading id="fit-heading">
@@ -239,8 +265,23 @@ export default function Brief() {
                 </Stagger>
             </Band>
 
+            {/* ── Working style ──────────────────────────────────────── */}
+            <Band id="working-style" labelledBy="working-style-heading">
+                <Reveal>
+                    <Eyebrow>Fit</Eyebrow>
+                    <Heading id="working-style-heading">{workingStyle.heading}</Heading>
+                    <div className="space-y-5">
+                        {workingStyle.body.map((para, i) => (
+                            <p key={i} className="text-ink-muted leading-relaxed">
+                                {para}
+                            </p>
+                        ))}
+                    </div>
+                </Reveal>
+            </Band>
+
             {/* ── Leadership ─────────────────────────────────────────── */}
-            <Band id="leadership" labelledBy="leadership-heading">
+            <Band id="leadership" labelledBy="leadership-heading" tone="alt">
                 <Reveal>
                     <Eyebrow>Trajectory</Eyebrow>
                     <Heading id="leadership-heading">{leadership.heading}</Heading>
@@ -255,7 +296,7 @@ export default function Brief() {
             </Band>
 
             {/* ── Closing ────────────────────────────────────────────── */}
-            <Band id="closing" labelledBy="closing-heading" tone="alt">
+            <Band id="closing" labelledBy="closing-heading">
                 <Reveal>
                     <Eyebrow>The honest version</Eyebrow>
                     <Heading id="closing-heading">{closing.heading}</Heading>

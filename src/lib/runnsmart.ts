@@ -38,6 +38,34 @@ export const stats = [
     },
 ];
 
+export const roleFit = {
+    heading: "Where I fit",
+    lead:
+        "Andrew asked this directly, so here's the plain answer: I'm three hires that early teams usually make separately, and the overlap between them is the point — the agent, the data it acts on, and the product people see are the same system.",
+    roles: [
+        {
+            title: "Full-stack engineer",
+            body:
+                "The product surface, end to end. Next.js App Router in production — the same stack app.runnsmart.com runs on — plus Node and Express APIs, Postgres schema and migrations, third-party auth and webhooks. I ship the front end and the service behind it, not one and then a handoff.",
+        },
+        {
+            title: "AI / agent engineer",
+            body:
+                "The RunnBoost side. Agent orchestration, tool calling, retrieval, and evaluating whether the agent's decisions were actually good — plus the spend-control layer underneath that makes autonomy safe enough to leave running. This is what I do now, all day.",
+        },
+        {
+            title: "Applied data",
+            body:
+                "Getting data in and making it mean something. Multi-source ingestion on different schedules, reconciling sources that disagree, deriving state you can defend, and the dashboards on top — I've done the BI and visualization side too, so I can build the charts as well as the pipeline feeding them.",
+        },
+        {
+            title: "Cross-platform, across teams",
+            body:
+                "At Dhanush Healthcare I shipped React Native apps across three product lines — telemedicine, learning and booking — 16 releases to the App Store and Play Store, 60+ shared components and 150+ REST integrations, coordinating with backend, design and QA teams rather than working in a lane. I also ship native iOS in Swift and SwiftUI. If RunnSmart needs a mobile surface, that's not a new hire either.",
+        },
+    ],
+};
+
 export const fitMap = [
     {
         need: "An agent that spends money without blowing up",
@@ -112,9 +140,9 @@ export const controlLayer = {
 
 export const outsideRead = {
     intro:
-        "Andrew asked what else there is to talk about. This is the part I'd actually want to talk about — what I think is hard about your product, read from the outside. I expect some of it to be wrong. Being corrected on it is most of why I want the technical conversation.",
+        "Andrew asked what else there is to talk about. This is the part I'd actually want to talk about — what I think is hard about the product. Some of it I expect to be wrong, and being corrected on it is most of why I want the technical conversation.",
     caveat:
-        "Read entirely from your public surfaces — the marketing site, the app shell, the pricing page and the lead form. No inside knowledge.",
+        "Andrew walked me through the product on our call, and the optimization line charts are genuinely good — that's the surface where all of this becomes legible to a customer, and it's already strong. The rest below is my own read of what sits behind it.",
     observations: [
         {
             title: "Your price card is gated on cadence, not features",
@@ -122,19 +150,14 @@ export const outsideRead = {
                 "The tiers differ by how often the agent optimizes — every five days, every three days, then continuous. That tells me continuous operation is a cost and rate-limit problem, not a packaging choice. Whoever solves the API quota math doesn't ship a feature; they move the price card and the margin at the same time.",
         },
         {
-            title: "The integration surface looks like the real constraint",
+            title: "Two networks live, two in flight — that's where the leverage is",
             body:
-                "The homepage tells a four-network story while TikTok and Microsoft read as 'soon' on the lead form. That gap is the gap between what the top tier sells and what it delivers. Integrations against APIs I don't control are the thing I've done most often and most recently.",
+                "Google and Meta are running; TikTok and Microsoft are being built. Landing those is what makes the four-network story true everywhere, and each new network multiplies the freshness and quota problems below rather than just adding a logo. Integrating against APIs I don't own is the thing I've done most often and most recently — six payment and banking providers in production, each with its own auth model, webhook contract and rate limits.",
         },
         {
             title: "Freshness drift is the silent correctness bug",
             body:
                 "Four ad networks report on four different clocks. An agent acting on the freshest slice of an otherwise stale picture makes confident, wrong moves — and they look like normal moves in the logs. Every multi-source optimizer has this. In payments the same class of bug is a double-spend, which is why I've built for it: derive state on read, stamp provenance, and never let one source's staleness silently win.",
-        },
-        {
-            title: "The six-day assessment is a person",
-            body:
-                "A free PPC assessment that takes six business days is human keyword and competitor research. That's your entire top of funnel, gated on someone's calendar — which is also the difference between self-serve growth and sales-gated growth.",
         },
     ],
 };
@@ -144,10 +167,16 @@ export const ninetyDays = {
         "If I joined, this is where I'd want to start — offered as a proposal to be argued with, not a plan I think I'm entitled to.",
     phases: [
         {
-            window: "Days 0–30",
-            title: "Close the integration gap",
+            window: "Days 0–7",
+            title: "Learn the system inside out — and the industry around it",
             body:
-                "Take TikTok and Microsoft to parity with Google and Meta. It makes the four-network story true everywhere, it's what the top tier is actually selling, and it's the fastest way for a new engineer to be net-positive instead of net-onboarding.",
+                "Before proposing anything, understand what actually exists: read the engine end to end, trace one optimization from data pull to applied budget change, find out what's already been tried and what broke. And get properly literate in ad tech itself — auction mechanics, attribution, match rates, how each network's API differs in what it will even let you change. I've built for money movement, not for media buying, and I'd rather learn that from your team and your data in week one than assume my payments instincts transfer cleanly. Everything below is provisional until this week is done.",
+        },
+        {
+            window: "Days 7–30",
+            title: "Help land the networks already in flight",
+            body:
+                "Get behind TikTok and Microsoft and help bring them to parity with Google and Meta. It's the fastest way for a new engineer to be net-positive instead of net-onboarding, it's work I've done repeatedly, and shipping alongside whoever owns it now is how I'd learn the codebase properly rather than reading it.",
         },
         {
             window: "Days 30–60",
@@ -157,10 +186,19 @@ export const ninetyDays = {
         },
         {
             window: "Days 60–90",
-            title: "Automate the assessment",
+            title: "Make continuous optimization cheap enough to sell",
             body:
-                "Six business days to minutes. It's the top of the funnel, it's mechanical, and shipping it converts a sales bottleneck into a growth loop.",
+                "Attack the quota and cost math under the cadence tiers: batch and dedupe calls, cache what doesn't change, prioritize the accounts where a move actually matters. If continuous operation stops being expensive, the top tier stops being a constraint you price around and becomes the default — which is a margin change, not a feature.",
         },
+    ],
+};
+
+export const workingStyle = {
+    heading: "How I work",
+    body: [
+        "My model for a team comes from football. I've played my whole life, and the side I take from is Barcelona at their best — total team football: everyone comfortable in more than one position, the shape held by coordination rather than instruction, and whoever is nearest the problem solving it. Nobody stands still waiting to be told where to stand.",
+        "In engineering that translates to something concrete: I don't need managing. Give me the objective and the constraints and I'll come back with it built, having asked the questions that actually needed asking rather than the ones that fill a status update. That's been the job at Harmoney — no one to escalate to, so the judgement calls were mine.",
+        "Which is why the thing Andrew said that stuck hardest was that RunnSmart runs on three team meetings a week and no micromanagement. That's the environment I do my best work in, and it's the one I'd want to protect as the team grows — coordination over supervision, for as long as you can hold it.",
     ],
 };
 
