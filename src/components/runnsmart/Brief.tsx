@@ -10,7 +10,6 @@ import {
     ninetyDays,
     workingStyle,
     leadership,
-    closing,
 } from "@/lib/runnsmart";
 
 /** Section shell — inherits the alternating cream banding used on the home page. */
@@ -246,19 +245,16 @@ export default function Brief() {
                     <p className="text-ink-muted leading-relaxed">{ninetyDays.intro}</p>
                 </Reveal>
 
-                <Stagger className="mt-10 space-y-10">
+                <Stagger className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-5">
                     {ninetyDays.phases.map((phase) => (
                         <StaggerItem key={phase.window}>
-                            <div className="relative pl-6 border-l-2 border-terracotta-400">
-                                <span className="text-xs font-semibold text-terracotta-700 uppercase tracking-wider bg-terracotta-50 px-2.5 py-1 rounded-full">
+                            <div className="h-full bg-cream-50 border border-cream-300 rounded-lg p-6 border-t-4 border-t-terracotta-400">
+                                <span className="text-xs font-semibold text-terracotta-700 uppercase tracking-wider">
                                     {phase.window}
                                 </span>
-                                <h3 className="text-lg font-bold text-ink mt-3 mb-2">
+                                <h3 className="text-lg font-bold text-ink mt-3 leading-snug">
                                     {phase.title}
                                 </h3>
-                                <p className="text-ink-muted leading-relaxed">
-                                    {phase.body}
-                                </p>
                             </div>
                         </StaggerItem>
                     ))}
@@ -295,21 +291,6 @@ export default function Brief() {
                 </Reveal>
             </Band>
 
-            {/* ── Closing ────────────────────────────────────────────── */}
-            <Band id="closing" labelledBy="closing-heading">
-                <Reveal>
-                    <Eyebrow>The honest version</Eyebrow>
-                    <Heading id="closing-heading">{closing.heading}</Heading>
-                    <div className="space-y-5">
-                        {closing.body.map((para, i) => (
-                            <p key={i} className="text-ink-muted leading-relaxed">
-                                {para}
-                            </p>
-                        ))}
-                    </div>
-                    <p className="mt-8 font-semibold text-ink">{closing.signoff}</p>
-                </Reveal>
-            </Band>
         </>
     );
 }

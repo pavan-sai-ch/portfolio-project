@@ -168,27 +168,15 @@ export const ninetyDays = {
     phases: [
         {
             window: "Days 0–7",
-            title: "Learn the system inside out — and the industry around it",
-            body:
-                "Before proposing anything, understand what actually exists: read the engine end to end, trace one optimization from data pull to applied budget change, find out what's already been tried and what broke. And get properly literate in ad tech itself — auction mechanics, attribution, match rates, how each network's API differs in what it will even let you change. I've built for money movement, not for media buying, and I'd rather learn that from your team and your data in week one than assume my payments instincts transfer cleanly. Everything below is provisional until this week is done.",
+            title: "Learn the engine. Learn ad tech.",
         },
         {
             window: "Days 7–30",
-            title: "Help land the networks already in flight",
-            body:
-                "Get behind TikTok and Microsoft and help bring them to parity with Google and Meta. It's the fastest way for a new engineer to be net-positive instead of net-onboarding, it's work I've done repeatedly, and shipping alongside whoever owns it now is how I'd learn the codebase properly rather than reading it.",
+            title: "Help land TikTok and Microsoft.",
         },
         {
-            window: "Days 30–60",
-            title: "A safety and simulation rail for RunnBoost",
-            body:
-                "Per-account hard spend ceilings, a velocity circuit breaker on day-over-day jumps, human approval required above a threshold, and a full action log recording every budget move with the inputs that justified it. Then shadow mode: run the agent's decisions without applying them and score them against what actually happened. Your site already promises simulating a move before it's applied — I'd turn that surface into the harness you regression-test the agent against. Every model change after that is a measured change instead of a hopeful one.",
-        },
-        {
-            window: "Days 60–90",
-            title: "Make continuous optimization cheap enough to sell",
-            body:
-                "Attack the quota and cost math under the cadence tiers: batch and dedupe calls, cache what doesn't change, prioritize the accounts where a move actually matters. If continuous operation stops being expensive, the top tier stops being a constraint you price around and becomes the default — which is a margin change, not a feature.",
+            window: "Days 30–90",
+            title: "Safety rails, shadow mode, cheaper continuous optimization.",
         },
     ],
 };
@@ -210,11 +198,3 @@ export const leadership = {
     ],
 };
 
-export const closing = {
-    heading: "Why RunnSmart, honestly",
-    body: [
-        "The engineering I was hired to build at Harmoney is built. What's left is go-to-market and a multi-year wait on banking partners — good work, but not mine, and not at the speed I want to move. I'd rather be building.",
-        "RunnSmart is an agent that autonomously spends other people's money, at a company that just closed a Series A and is at the point where someone needs to own that engine end to end. That's the problem I already know, arriving at the moment it starts to matter. Congratulations on the round, by the way — the timing is a large part of why I reached out.",
-    ],
-    signoff: "— Pavan Sai Chilukala",
-};
