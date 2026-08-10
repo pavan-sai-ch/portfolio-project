@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         <h3 className="text-xl font-bold text-ink group-hover:text-terracotta-600 transition-colors">
                             {project.title}
                         </h3>
-                        <span className="text-sm text-ink-soft font-mono">{project.year}</span>
+                        <span className="text-sm text-ink-muted font-mono">{project.year}</span>
                     </div>
                 </div>
 

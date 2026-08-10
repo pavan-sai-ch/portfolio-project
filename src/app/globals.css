@@ -105,4 +105,11 @@ body {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+    /* Scroll reveals (Reveal.tsx) start at opacity 0 and animate in. Land them
+       already settled instead — !important beats the inline style Framer sets,
+       so content is visible even before (or without) hydration. */
+    [data-reveal] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
 }

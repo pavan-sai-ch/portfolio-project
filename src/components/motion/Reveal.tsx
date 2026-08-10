@@ -1,7 +1,15 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import React from "react";
+
+// Reduced motion is handled in CSS (globals.css), not by branching on
+// useReducedMotion() here. The hook is false during SSR, so the server emitted
+// a motion.div with inline opacity:0 while the client rendered a plain div with
+// no style — hydration never cleared the inline style and every revealed
+// section stayed invisible for reduced-motion users. Keeping one element shape
+// and letting `[data-reveal]` be overridden by an !important rule removes the
+// divergence entirely, and still works if JS never loads.
 
 type Direction = "up" | "down" | "left" | "right" | "none";
 
@@ -33,14 +41,9 @@ export default function Reveal({
     direction?: Direction;
     className?: string;
 }) {
-    const shouldReduceMotion = useReducedMotion();
-
-    if (shouldReduceMotion) {
-        return <div className={className}>{children}</div>;
-    }
-
     return (
         <motion.div
+            data-reveal
             className={className}
             initial={{ opacity: 0, ...offset[direction] }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -64,12 +67,6 @@ export function Stagger({
     className?: string;
     stagger?: number;
 }) {
-    const shouldReduceMotion = useReducedMotion();
-
-    if (shouldReduceMotion) {
-        return <div className={className}>{children}</div>;
-    }
-
     const container: Variants = {
         hidden: {},
         show: { transition: { staggerChildren: stagger } },
@@ -77,6 +74,7 @@ export function Stagger({
 
     return (
         <motion.div
+            data-reveal
             className={className}
             variants={container}
             initial="hidden"
@@ -100,14 +98,8 @@ export function StaggerItem({
     children: React.ReactNode;
     className?: string;
 }) {
-    const shouldReduceMotion = useReducedMotion();
-
-    if (shouldReduceMotion) {
-        return <div className={className}>{children}</div>;
-    }
-
     return (
-        <motion.div className={className} variants={itemVariants}>
+        <motion.div data-reveal className={className} variants={itemVariants}>
             {children}
         </motion.div>
     );
