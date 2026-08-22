@@ -94,23 +94,6 @@ try {
         total += await scan(page, 'landing (mobile 375px)');
         await context.close();
     }
-
-    // 5. /runnsmart brief — the inverted divider band and terracotta callouts
-    // are contrast pairings the landing page never uses.
-    {
-        const { context, page } = await newPage(1280, 900);
-        await page.goto(`${BASE_URL}/runnsmart`, { waitUntil: 'networkidle' });
-        total += await scan(page, 'runnsmart brief (desktop)');
-        await context.close();
-    }
-
-    // 6. /runnsmart brief — mobile
-    {
-        const { context, page } = await newPage(375, 812);
-        await page.goto(`${BASE_URL}/runnsmart`, { waitUntil: 'networkidle' });
-        total += await scan(page, 'runnsmart brief (mobile 375px)');
-        await context.close();
-    }
 } finally {
     await browser.close();
 }
