@@ -12,10 +12,22 @@
     --frame: rgba(15, 28, 43, 0.10);
     --line: rgba(15, 28, 43, 0.22);
 
+    /* Size to the *visible* viewport. `inset: 0` on iOS Safari includes the
+       strip behind its (floating) toolbar, which hid the bottom of the frame. */
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    height: 100svh;
     display: grid;
-    padding: clamp(10px, 3vw, 40px);
+    box-sizing: border-box;
+    --gutter: clamp(10px, 3vw, 40px);
+    padding:
+        max(var(--gutter), env(safe-area-inset-top))
+        max(var(--gutter), env(safe-area-inset-right))
+        max(var(--gutter), env(safe-area-inset-bottom))
+        max(var(--gutter), env(safe-area-inset-left));
     color: var(--text);
     font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
     font-size: 15px;
