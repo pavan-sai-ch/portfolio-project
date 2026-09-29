@@ -19,24 +19,26 @@
     --g3: #CFE3E6;
 }
 
-/* html spans the *large* viewport so the page — glow included — continues
-   behind iOS Safari's translucent floating toolbar and blends into it. */
-html {
+html,
+body {
     height: 100%;
-    height: 100lvh;
     overflow: hidden;
 }
 
+/* iOS Safari does not draw page content under its floating toolbar or the
+   status bar: it fills them with a flat colour taken from the page background
+   (measured #EBEFF0 ≈ --base on a real iPhone). The glow therefore fades to
+   --base at the top and bottom edges, so it meets that fill with no seam.
+   Chrome, which draws content there, shows the same fade. */
 body {
-    height: 100%;
     margin: 0;
-    overflow: hidden;
     color: #0F1C2B;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     animation: drift 26s ease-in-out infinite;
     background-color: var(--base);
     background-image:
+        linear-gradient(var(--base), transparent 64px, transparent calc(100% - 96px), var(--base)),
         radial-gradient(55% 60% at var(--ax) var(--ay), color-mix(in srgb, var(--g1) 55%, transparent), transparent 70%),
         radial-gradient(60% 55% at var(--bx) var(--by), color-mix(in srgb, var(--g2) 45%, transparent), transparent 70%),
         linear-gradient(var(--base), var(--base2));

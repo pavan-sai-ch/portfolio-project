@@ -1,5 +1,5 @@
 /* Single-screen landing. The palette (--base, --g1 …) and the page glow live on
-   :root/body in globals.css, so the glow runs on under mobile browser toolbars. */
+   :root/body in globals.css (see the note there on iOS Safari's toolbar fill). */
 
 .page {
     --text: #0F1C2B;
@@ -7,11 +7,8 @@
     --frame: rgba(15, 28, 43, 0.10);
     --line: rgba(15, 28, 43, 0.22);
 
-    /* Normal flow, not position: fixed. iOS 26 Safari fills the area under
-       its floating toolbar with a flat colour sampled from fixed elements at
-       the screen edge (the seam in the screenshot); with no fixed layer it
-       shows the page itself there, blurred. Height is the always-visible
-       viewport, so the frame never tucks under the toolbar. */
+    /* Normal flow, sized to the always-visible viewport so the frame never
+       tucks under a mobile browser toolbar. */
     position: relative;
     height: 100vh;
     height: 100svh;
