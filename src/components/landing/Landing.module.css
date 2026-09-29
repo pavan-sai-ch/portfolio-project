@@ -1,6 +1,5 @@
-/* Single-screen landing. The palette (--base, --g1 …) and the drifting glow
-   behind the frame live on :root/body in globals.css, because iOS Safari shows
-   the root background — not this fixed layer — under its floating toolbar. */
+/* Single-screen landing. The palette (--base, --g1 …) and the page glow live on
+   :root/body in globals.css, so the glow runs on under mobile browser toolbars. */
 
 .page {
     --text: #0F1C2B;
@@ -8,12 +7,12 @@
     --frame: rgba(15, 28, 43, 0.10);
     --line: rgba(15, 28, 43, 0.22);
 
-    /* Size the frame to the viewport that is always visible, so it never
-       tucks under a browser toolbar. */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    /* Normal flow, not position: fixed. iOS 26 Safari fills the area under
+       its floating toolbar with a flat colour sampled from fixed elements at
+       the screen edge (the seam in the screenshot); with no fixed layer it
+       shows the page itself there, blurred. Height is the always-visible
+       viewport, so the frame never tucks under the toolbar. */
+    position: relative;
     height: 100vh;
     height: 100svh;
     display: grid;

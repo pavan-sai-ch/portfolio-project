@@ -19,8 +19,8 @@
     --g3: #CFE3E6;
 }
 
-/* html is sized to the *large* viewport so the root background also covers
-   the area behind iOS Safari's floating toolbar (it showed a hard seam there). */
+/* html spans the *large* viewport so the page — glow included — continues
+   behind iOS Safari's translucent floating toolbar and blends into it. */
 html {
     height: 100%;
     height: 100lvh;
@@ -44,8 +44,8 @@ body {
     background-size: 100% 100%;
 }
 
-/* Glow drift: animated on body so both the page background and the landing
-   panel (which inherits these properties) move together. */
+/* Glow drift: animated on body so the page glow and the panel (which inherits
+   these positions) move together. */
 @keyframes drift {
     33% { --ax: 12%; --ay: 97%; --bx: 90%; --by: 112%; --cx: 47%; }
     66% { --ax: 7%; --ay: 110%; --bx: 84%; --by: 101%; --cx: 60%; }
