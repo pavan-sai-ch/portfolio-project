@@ -1,0 +1,178 @@
+/* Single-screen landing. Clinical palette; glow positions (--ax … --cx) are
+   registered with @property in globals.css so the drift keyframes can animate them. */
+
+.page {
+    --base: #EAF0F1;
+    --base2: #F4F7F7;
+    --g1: #F4C3AA;
+    --g2: #A9D4CF;
+    --g3: #CFE3E6;
+    --text: #0F1C2B;
+    --muted: #3F4E5E;
+    --frame: rgba(15, 28, 43, 0.10);
+    --line: rgba(15, 28, 43, 0.22);
+
+    position: fixed;
+    inset: 0;
+    display: grid;
+    padding: clamp(10px, 3vw, 40px);
+    color: var(--text);
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    animation: drift 26s ease-in-out infinite;
+    background:
+        radial-gradient(55% 60% at var(--ax) var(--ay), color-mix(in srgb, var(--g1) 55%, transparent), transparent 70%),
+        radial-gradient(60% 55% at var(--bx) var(--by), color-mix(in srgb, var(--g2) 45%, transparent), transparent 70%),
+        linear-gradient(var(--base), var(--base2));
+}
+
+@keyframes drift {
+    33% { --ax: 12%; --ay: 97%; --bx: 90%; --by: 112%; --cx: 47%; }
+    66% { --ax: 7%; --ay: 110%; --bx: 84%; --by: 101%; --cx: 60%; }
+}
+
+.frame {
+    display: grid;
+    min-height: 0;
+    padding: clamp(6px, 0.7vw, 10px);
+    border-radius: 22px;
+    background: var(--frame);
+}
+
+.panel {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: clamp(18px, 3vw, 34px) clamp(18px, 5vw, 64px);
+    border-radius: 15px;
+    background:
+        radial-gradient(62% 58% at var(--ax) var(--ay), var(--g1), transparent 72%),
+        radial-gradient(70% 62% at var(--bx) var(--by), var(--g2), transparent 70%),
+        radial-gradient(90% 60% at var(--cx) 112%, var(--g3), transparent 76%),
+        linear-gradient(var(--base) 30%, var(--base2));
+}
+
+.canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.header,
+.footer,
+.main {
+    position: relative;
+}
+
+.header,
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer {
+    align-items: end;
+    font-size: 14px;
+}
+
+.tagline {
+    font: 500 clamp(17px, 2vw, 23px) / 1.2 var(--font-serif), Georgia, serif;
+    letter-spacing: -0.01em;
+}
+
+.quiet {
+    color: var(--muted);
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+a.quiet:hover {
+    color: var(--text);
+}
+
+.main {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    justify-items: center;
+    gap: clamp(28px, 3.6vw, 44px);
+    max-width: 960px;
+    text-align: center;
+}
+
+.name {
+    margin: 0;
+    font: 400 clamp(40px, 6.6vw, 88px) / 1.03 var(--font-serif), Georgia, serif;
+    letter-spacing: -0.028em;
+    text-wrap: balance;
+}
+
+.cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    height: 46px;
+    padding: 0 22px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: transform 0.15s, border-color 0.2s;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.primary {
+    background: var(--text);
+    color: var(--base2);
+}
+
+.ghost {
+    border: 1px solid var(--line);
+}
+
+.ghost:hover {
+    border-color: var(--text);
+}
+
+.address {
+    user-select: all;
+}
+
+.enter {
+    animation: rise 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.delay {
+    animation-delay: 0.15s;
+}
+
+@keyframes rise {
+    from { opacity: 0; transform: translateY(10px); }
+}
+
+.page a:focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page,
+    .enter {
+        animation: none;
+    }
+}

@@ -40,14 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# graphify — keep graph.json + GRAPH_REPORT.md; ignore regenerable/local artifacts
-graphify-out/cache/
-graphify-out/graph.html
-graphify-out/manifest.json
-graphify-out/cost.json
-graphify-out/.graphify_labels.json
-graphify-out/.graphify_python
-graphify-out/.graphify_root
 
 # Local Claude Code worktrees (regenerable, not source)
 .claude/worktrees/
