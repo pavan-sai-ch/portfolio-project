@@ -128,7 +128,10 @@ async function newPage(width, height) {
 }
 
 try {
-    const SIZES = [['desktop', 1280, 900], ['laptop', 1366, 640], ['mobile 375px', 375, 812], ['small mobile', 320, 568]];
+    // Phone heights are the *visible* area once the browser toolbars are shown
+    // (iPhone SE and 15 in Safari, an in-app browser), plus landscape.
+    const SIZES = [['desktop', 1280, 900], ['laptop', 1366, 640], ['mobile 375px', 375, 812], ['small mobile', 320, 568],
+        ['iPhone SE Safari', 375, 553], ['iPhone 15 Safari', 393, 659], ['in-app browser', 390, 600], ['phone landscape', 844, 340]];
     for (const [label, w, h] of SIZES) {
         const { context, page } = await newPage(w, h);
         await page.goto(BASE_URL, { waitUntil: 'networkidle' });
